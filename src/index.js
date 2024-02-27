@@ -6,7 +6,7 @@ import {MaptilerLayer} from "@maptiler/leaflet-maptilersdk";
 
 
 
-const defaultBackgroundMapStyle = 0;
+const defaultBackgroundMapStyle = 3;
 
 const circleMarkerOptions = {
   radius: 8,
@@ -34,14 +34,6 @@ const featureMarker = (feature, latlng) => {
   });
   return marker;
 };
-
-
-
-
-
-
-
-
 
 
 var map = L.map("map").setView([52.5105, 13.4061], 12);
@@ -76,6 +68,6 @@ styles.forEach((s) => {
 baseLayers[defaultBackgroundMapStyle].addTo(map);
 
 // https://leafletjs.com/examples/geojson/
-fetch(new Request("/data.geojson")).then((response) => response.json()).then((data) => {
+fetch(new Request("/map_data.geojson")).then((response) => response.json()).then((data) => {
   data.forEach((o) => overlay.addData(o));
 });

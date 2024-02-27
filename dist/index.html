@@ -6,7 +6,46 @@
     <title>bookish map</title>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="container">
+      <div id="controls">
+        <select name="type" id="type-select">
+          <option value="bookstore">BOOKSTORE</option>
+          <option value="library">LIBRARY</option>
+          <option value="street_lib">STREET LIBRARY</option>
+        </select>
+        <button class="tag" type="button">SECOND HAND</button>
+        <button class="tag" type="button">EVENTS</button>
+        <button class="tag" type="button">COFFEE/SNACK</button>
+        <!-- Maybe this needs to be a plugin or smt-->
+        <select name="languages" id="lan-select">
+          <option value="">LANGUAGE</option>
+          <option value="english">English</option>
+          <option value="german">German</option>
+          <option value="polish">Polish</option>
+          <option value="french">French</option>
+        </select>
+        <button class="tag" type="button">ACCEPT ORDERS</button>
+        <button class="tag" type="button">LESSONS</button>
+        <button class="tag" type="button">OPEN AFTER 6PM</button>
+      </div>
+      <div id="bottom">
+        <div id="results">
+          <details class="result_item">
+            <summary>Bookstore name</summary>
+            <p class="result_details">
+              Street</br>           
+              Working times </br>
+            </p>
+          </details>
+          <!-- <div class="result_item">
+            Bookstore name</br>
+            Street</br>           
+            Working times </br>
+          </div>-->
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
     <script src="bundle.js"></script>
   </body>
 </html>

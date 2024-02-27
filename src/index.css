@@ -1,4 +1,117 @@
-html, body, #map {
+/*
+colors:
+green: #ACBE8B
+blue: #0A278B
+red: #8F1409
+pink: #D79DB0
+orange: #CA4023
+blueish: #456BB2
+yellow: #E1C683
+mushy: #B3A47D
+bluegray: #9EAFB9
+redpink: #C77170
+*/
+
+@font-face {
+  font-family: "Compagnon-Bold";
+  src:
+    url("type/Compagnon-Bold.otf") format("opentype"),
+    url("type/Compagnon-Bold.woff") format("woff"),
+    url("type/Compagnon-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Compagnon-Medium";
+  src:
+    url("type/Compagnon-Medium.otf") format("opentype"),
+    url("type/Compagnon-Medium.woff") format("woff"),
+    url("type/Compagnon-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Compagnon-Italic";
+  src:
+    url("type/Compagnon-Italic.otf") format("opentype"),
+    url("type/Compagnon-Italic.woff") format("woff"),
+    url("type/Compagnon-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Compagnon-Light";
+  src:
+    url("type/Compagnon-Light.otf") format("opentype"),
+    url("type/Compagnon-Light.woff") format("woff"),
+    url("type/Compagnon-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Compagnon-Roman";
+  src:
+    url("type/Compagnon-Roman.otf") format("opentype"),
+    url("type/Compagnon-Roman.woff") format("woff"),
+    url("type/Compagnon-Roman.woff2") format("woff2");
+}
+
+
+
+html, body {
 	margin: 0;
 	height: 100%;
+	font-family: "Compagnon-Medium", sans-serif;
+}
+
+#container {
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#controls {
+	height: 100px;
+	width: 100%;
+	background-color: #ACBE8B;
+	padding: 24px;
+}
+
+.tag {
+	font-size: 16px;
+	border: none;
+	font-family: "Compagnon-Medium", sans-serif;
+	background-color: #9EAFB9;
+	padding: 8px 16px;
+}
+
+select {
+	font-size: 16px;
+	font-family: "Compagnon-Medium", sans-serif;
+	border: none;
+	background-color: #9EAFB9;
+	padding: 8px 16px;
+}
+
+#bottom {
+	display: flex;
+	height: 100%;
+}
+
+#results {
+	width: 400px;
+	height: 100%;
+	background-color: #E1C683;
+	padding: 8px;
+}
+
+.result_item {
+	border: 1px solid black;
+	padding: 8px;
+}
+
+.result_details {
+
+}
+
+#map {
+	height: 100%;
+	width: 100%;
 }
