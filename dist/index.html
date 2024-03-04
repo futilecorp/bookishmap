@@ -7,33 +7,44 @@
   </head>
   <body>
     <div id="container">
-      <div id="controls">
-        <select name="type" id="type-select">
-          <option value="bookstore">BOOKSTORE</option>
-          <option value="library">LIBRARY</option>
-          <option value="street_lib">STREET LIBRARY</option>
-        </select>
-        <button class="tag" type="button">SECOND HAND</button>
-        <button class="tag" type="button">EVENTS</button>
-        <button class="tag" type="button">COFFEE/SNACK</button>
-        <!-- Maybe this needs to be a plugin or smt-->
-        <select name="languages" id="lan-select">
-          <option value="">LANGUAGE</option>
-          <option value="english">English</option>
-          <option value="german">German</option>
-          <option value="polish">Polish</option>
-          <option value="french">French</option>
-        </select>
-        <button class="tag" type="button">ACCEPT ORDERS</button>
-        <button class="tag" type="button">LESSONS</button>
-        <button class="tag" type="button">OPEN AFTER 6PM</button>
-        <button id="wheelchair_button" class="tag" type="button">WHEELCHAIR</button>
+      <div id="top">
+        <div id="title">
+          <p>OpenBook</p>
+          <button id="readmore" type="button">Read more</a>
+        </div>
+        <div id="controls">
+          <select name="type" id="type-select">
+            <option value="bookstore">BOOKSTORE</option>
+            <option value="library">LIBRARY</option>
+            <option value="street_lib">STREET LIBRARY</option>
+          </select>
+          <button class="tag" type="button">SECOND HAND</button>
+          <button class="tag" type="button">EVENTS</button>
+          <button class="tag" type="button">COFFEE/SNACK</button>
+          <!-- Maybe this needs to be a plugin or smt-->
+          <select name="languages" id="lan-select">
+            <option value="">LANGUAGE</option>
+            <option value="english">English</option>
+            <option value="german">German</option>
+            <option value="polish">Polish</option>
+            <option value="french">French</option>
+          </select>
+          <button class="tag" type="button">ACCEPT ORDERS</button>
+          <button class="tag" type="button">LESSONS</button>
+          <button class="tag" type="button">OPEN AFTER 6PM</button>
+          <button id="wheelchair_button" class="tag" type="button">WHEELCHAIR</button>
+        </div>
       </div>
       <div id="bottom">
         <div id="results">
         </div>
         <div id="map"></div>
       </div>
+    </div>
+    <div id="popup">
+      tralalalal
+      <img src="/bingo.png">
+      <button id="close" type="button">Close</button>
     </div>
     <script src="bundle.js"></script>
   </body>

@@ -8,11 +8,11 @@ const defaultBackgroundMapStyle = 3;
 
 const circleMarkerOptions = {
   radius: 8,
-  fillColor: "#ff7800",
+  fillColor: "#CA4023",
   color: "#000",
   weight: 1,
   opacity: 1,
-  fillOpacity: 0.8
+  fillOpacity: 1
 };
 
 const iconMarkerOptions = {
@@ -66,6 +66,9 @@ baseLayers[defaultBackgroundMapStyle].addTo(map);
 
 document.getElementById("wheelchair_button").addEventListener("click", wheelchairSelected);
 
+document.getElementById("readmore").addEventListener("click", readMore);
+document.getElementById("close").addEventListener("click", close);
+
 function wheelchairSelected() {
     fetch(new Request("/map_data.geojson")).then((response) => response.json()).then((data) => {
 
@@ -93,6 +96,14 @@ function wheelchairSelected() {
   }
   });
 });
+}
+
+function readMore() {
+  document.getElementById('popup').style.display = "flex";
+}
+
+function close() {
+  document.getElementById('popup').style.display = "none";
 }
 
 // https://leafletjs.com/examples/geojson/
