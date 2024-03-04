@@ -67,7 +67,10 @@ baseLayers[defaultBackgroundMapStyle].addTo(map);
 document.getElementById("wheelchair_button").addEventListener("click", wheelchairSelected);
 
 document.getElementById("readmore").addEventListener("click", readMore);
-document.getElementById("close").addEventListener("click", close);
+document.getElementById("closeReadMore").addEventListener("click", closeReadMore);
+
+document.getElementById("bingo").addEventListener("click", showBingo);
+document.getElementById("closeBingo").addEventListener("click", closeBingo);
 
 function wheelchairSelected() {
     fetch(new Request("/map_data.geojson")).then((response) => response.json()).then((data) => {
@@ -99,11 +102,19 @@ function wheelchairSelected() {
 }
 
 function readMore() {
-  document.getElementById('popup').style.display = "flex";
+  document.getElementById('popupDescription').style.display = "flex";
 }
 
-function close() {
-  document.getElementById('popup').style.display = "none";
+function closeReadMore() {
+  document.getElementById('popupDescription').style.display = "none";
+}
+
+function showBingo() {
+  document.getElementById('popupBingo').style.display = "flex";
+}
+
+function closeBingo() {
+  document.getElementById('popupBingo').style.display = "none";
 }
 
 // https://leafletjs.com/examples/geojson/
