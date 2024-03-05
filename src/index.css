@@ -105,8 +105,9 @@ html, body {
 	padding: 8px 16px;
 }
 
-.tag:hover {
-  background-color: rgba(255, 0, 0, 1);
+.tag:hover, select:hover {
+  background-color: #8F1409;
+  cursor: pointer;
 }
 
 .tag:active {
@@ -150,6 +151,7 @@ select, .tag {
 .result_item {
 	border: 1px solid black;
 	padding: 8px;
+	cursor: pointer;
 }
 
 .result_item:hover, .result_item:active {

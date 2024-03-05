@@ -134,7 +134,14 @@ fetch(new Request("/map_data.geojson")).then((response) => response.json()).then
     p1.textContent = o.properties['addr:street'] + ' ' + o.properties['addr:housenumber'] + 
                   ', ' + o.properties['addr:postcode'] + ' '  + o.properties['addr:city'];
     //needs to be differently formated
-    p2.textContent = o.properties['opening_hours'];
+    let hours = o.properties['opening_hours'];
+    p2.textContent = hours;
+    if (typeof hours == "string") {
+      hours.split(';');
+    } else {
+      console.log("no string");
+    }
+
 
     details.appendChild(summary);
     details.appendChild(p1);
