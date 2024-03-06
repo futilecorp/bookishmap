@@ -86,41 +86,41 @@ redpink: #C77170
 @font-face {
   font-family: "Compagnon-Bold";
   src:
-    url("type/Compagnon-Bold.otf") format("opentype"),
-    url("type/Compagnon-Bold.woff") format("woff"),
-    url("type/Compagnon-Bold.woff2") format("woff2");
+    url("assets/type/Compagnon-Bold.otf") format("opentype"),
+    url("assets/type/Compagnon-Bold.woff") format("woff"),
+    url("assets/type/Compagnon-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Compagnon-Medium";
   src:
-    url("type/Compagnon-Medium.otf") format("opentype"),
-    url("type/Compagnon-Medium.woff") format("woff"),
-    url("type/Compagnon-Medium.woff2") format("woff2");
+    url("assets/type/Compagnon-Medium.otf") format("opentype"),
+    url("assets/type/Compagnon-Medium.woff") format("woff"),
+    url("assets/type/Compagnon-Medium.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Compagnon-Italic";
   src:
-    url("type/Compagnon-Italic.otf") format("opentype"),
-    url("type/Compagnon-Italic.woff") format("woff"),
-    url("type/Compagnon-Italic.woff2") format("woff2");
+    url("assets/type/Compagnon-Italic.otf") format("opentype"),
+    url("assets/type/Compagnon-Italic.woff") format("woff"),
+    url("assets/type/Compagnon-Italic.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Compagnon-Light";
   src:
-    url("type/Compagnon-Light.otf") format("opentype"),
-    url("type/Compagnon-Light.woff") format("woff"),
-    url("type/Compagnon-Light.woff2") format("woff2");
+    url("assets/type/Compagnon-Light.otf") format("opentype"),
+    url("assets/type/Compagnon-Light.woff") format("woff"),
+    url("assets/type/Compagnon-Light.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Compagnon-Roman";
   src:
-    url("type/Compagnon-Roman.otf") format("opentype"),
-    url("type/Compagnon-Roman.woff") format("woff"),
-    url("type/Compagnon-Roman.woff2") format("woff2");
+    url("assets/type/Compagnon-Roman.otf") format("opentype"),
+    url("assets/type/Compagnon-Roman.woff") format("woff"),
+    url("assets/type/Compagnon-Roman.woff2") format("woff2");
 }
 
 html, body {
