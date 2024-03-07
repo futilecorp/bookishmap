@@ -1,7 +1,7 @@
 <script>
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import { LMap, LMarker, LTileLayer } from "@vue-leaflet/vue-leaflet";
+import { LCircleMarker, LMap, LMarker, LTileLayer } from "@vue-leaflet/vue-leaflet";
 
 import ListEntry from './components/ListEntry.vue';
 import TagButton from './components/TagButton.vue';
@@ -13,6 +13,7 @@ export default {
   components: {
     ListEntry,
     LMap,
+    LCircleMarker,
     LMarker,
     LTileLayer,
     TagButton
@@ -24,6 +25,14 @@ export default {
       maptilerId: "basic-v2-light/256",
       maptilerApi: "h24s9QHr7NmztAXKJCDP",
       zoom: 12,
+      circleMarkerStyle:{
+        radius: 8,
+        fillColor: "#CA4023",
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 1
+      }
     };
   },
   computed: {
@@ -101,7 +110,7 @@ export default {
 
         <l-map ref="map" v-model:zoom="zoom" :minZoom="10" :center="[52.5105, 13.4061]">
           <l-tile-layer :url="maptilerUrl"></l-tile-layer>
-          <l-marker v-for="p in points" :lat-lng="p.geometry.coordinates.toReversed()"></l-marker>
+          <l-circle-marker v-for="p in points" :lat-lng="p.geometry.coordinates.toReversed()" :options="circleMarkerStyle"></l-circle-marker>
         </l-map>
       </div>
 
