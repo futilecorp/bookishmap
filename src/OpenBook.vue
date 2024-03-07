@@ -1,3 +1,54 @@
+<script>
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+import { LMap, LMarker, LTileLayer } from "@vue-leaflet/vue-leaflet";
+
+import ListEntry from './components/ListEntry.vue';
+import TagButton from './components/TagButton.vue';
+
+export default {
+  beforeMount() {
+    this.getPoints();
+  },
+  components: {
+    ListEntry,
+    LMap,
+    LMarker,
+    LTileLayer,
+    TagButton
+  },
+  data() {
+    return {
+      allPoints: [], // before filtering
+      points: [],
+      maptilerId: "basic-v2-light/256",
+      maptilerApi: "h24s9QHr7NmztAXKJCDP",
+      zoom: 12,
+    };
+  },
+  computed: {
+    maptilerUrl() {
+      return `https://api.maptiler.com/maps/${this.maptilerId}/{z}/{x}/{y}.png?key=${this.maptilerApi}`
+    }
+  },
+  methods: {
+    getPoints() {
+      fetch('/map_data.geojson')
+        .then(response => response.json())
+        .then(data => { this.allPoints = data; this.points = data })
+    },
+    onTagClick(e) {
+      // filter the points list based on whether they have that tag
+      this.points = this.allPoints.filter((p) => p.properties[e.target.dataset.filter]);
+    },
+    zoomToPoint(p) {
+      console.log(this.$refs.map);
+      this.$refs.map.leafletObject.flyTo(p.geometry.coordinates.toReversed(), 15);
+    },
+  }
+};
+</script>
+
 <template>
     <div id="container">
       <div id="top">
@@ -50,7 +101,7 @@
 
         <l-map ref="map" v-model:zoom="zoom" :minZoom="10" :center="[52.5105, 13.4061]">
           <l-tile-layer :url="maptilerUrl"></l-tile-layer>
-          <l-circle-marker v-for="p in points" :lat-lng="p.geometry.coordinates.toReversed()" :options="circleMarkerStyle"></l-circle-marker>
+          <l-marker v-for="p in points" :lat-lng="p.geometry.coordinates.toReversed()"></l-marker>
         </l-map>
       </div>
 
@@ -255,63 +306,3 @@ select, .tag {
 	color: #8F1409;
 }
 </style>
-
-<script>
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
-import { LCircleMarker, LMap, LMarker, LTileLayer } from "@vue-leaflet/vue-leaflet";
-
-import ListEntry from './components/ListEntry.vue';
-import TagButton from './components/TagButton.vue';
-
-export default {
-  beforeMount() {
-    this.getPoints();
-  },
-  components: {
-    ListEntry,
-    LMap,
-    LCircleMarker,
-    LMarker,
-    LTileLayer,
-    TagButton
-  },
-  data() {
-    return {
-      allPoints: [], // before filtering
-      points: [],
-      maptilerId: "basic-v2-light/256",
-      maptilerApi: "h24s9QHr7NmztAXKJCDP",
-      zoom: 12,
-      circleMarkerStyle:{
-        radius: 8,
-        fillColor: "#CA4023",
-        color: "#000",
-        weight: 1,
-        opacity: 1,
-        fillOpacity: 1
-      }
-    };
-  },
-  computed: {
-    maptilerUrl() {
-      return `https://api.maptiler.com/maps/${this.maptilerId}/{z}/{x}/{y}.png?key=${this.maptilerApi}`
-    }
-  },
-  methods: {
-    getPoints() {
-      fetch('/map_data.geojson')
-        .then(response => response.json())
-        .then(data => { this.allPoints = data; this.points = data })
-    },
-    onTagClick(e) {
-      // filter the points list based on whether they have that tag
-      this.points = this.allPoints.filter((p) => p.properties[e.target.dataset.filter]);
-    },
-    zoomToPoint(p) {
-      console.log(this.$refs.map);
-      this.$refs.map.leafletObject.flyTo(p.geometry.coordinates.toReversed(), 15);
-    },
-  }
-};
-</script>
