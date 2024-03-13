@@ -1,7 +1,8 @@
 <script>
+import { toRaw } from "vue";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import { LCircleMarker, LMap, LMarker, LTileLayer } from "@vue-leaflet/vue-leaflet";
+import { LCircleMarker, LMap, LMarker, LTileLayer, LTooltip } from "@vue-leaflet/vue-leaflet";
 
 import ListEntry from './components/ListEntry.vue';
 import TagButton from './components/TagButton.vue';
@@ -16,12 +17,15 @@ export default {
     LCircleMarker,
     LMarker,
     LTileLayer,
+    LTooltip,
     TagButton
   },
   data() {
     return {
       allPoints: [], // before filtering
-      points: [],
+      filter: {}, // key: value or key: [values,...] pairs
+      points: [], // after filtering
+      highlighted: null, // currently selected shop
       maptilerId: "basic-v2-light/256",
       maptilerApi: "h24s9QHr7NmztAXKJCDP",
       zoom: 12,
@@ -32,27 +36,77 @@ export default {
         weight: 1,
         opacity: 1,
         fillOpacity: 1
+      },
+      hoverTooltipOptions: {
+        // available options: 
+        // https://leafletjs.com/reference.html#tooltip-option
+        direction: 'top',
+        className: 'maptooltip', // style by adding a CSS definition
       }
     };
   },
   computed: {
     maptilerUrl() {
       return `https://api.maptiler.com/maps/${this.maptilerId}/{z}/{x}/{y}.png?key=${this.maptilerApi}`
-    }
+    },
+    /* points() { */
+    /*   let points = this.allPoints; */
+    /*   for (let field of Object.keys(toRaw(this.filter))) { */
+    /*     points = points.filter((p) => this.filter[field].includes(p[field])); */ 
+    /*   } */
+    /*   return points; */
+    /* } */
   },
   methods: {
     getPoints() {
-      fetch('/map_data.geojson')
+      fetch('/data.json')
         .then(response => response.json())
-        .then(data => { this.allPoints = data; this.points = data })
+        .then(data => {
+            this.allPoints = Object.values(data).map((el) => {
+              // copy all raw OSM properties to root level (unless they've been 
+              // overridden)
+              for (let key of Object.keys(el.raw)) {
+                if (!(key in el)) {
+                  el[key] = el.raw[key];
+                }
+              }
+              return el;
+            });
+            this.points = this.allPoints;
+        })
     },
-    onTagClick(e) {
-      // filter the points list based on whether they have that tag
-      this.points = this.allPoints.filter((p) => p.properties[e.target.dataset.filter]);
+    selectHighlight(entry) {
+      // this method is called when an entry is clicked on the map
+      // setting this entry as highlighted adds a class which makes sure the 
+      // summary is expanded to display all details
+      this.highlighted = entry;
+      //.scrollIntoView();
+      // TODO cancel highlight when map is panned/zoomed?
+    },
+    toggleFilter(field, values) {
+      if (this.filter[field] == values || Array.isArray(this.filter[field])) {
+        // remove
+        delete this.filter[field];
+      } else {
+        // add (or override)
+        this.filter[field] = values;
+      }
+      let points = this.allPoints;
+      for (let field of Object.keys(toRaw(this.filter))) {
+        if (Array.isArray(this.filter[field])) {
+          points = points.filter((p) => this.filter[field].includes(p[field])); 
+        } else {
+          points = points.filter((p) => this.filter[field] == p[field]);
+        }
+      }
+      this.points = points;
+    },
+    toggleSelect(e) {
+      this.toggleFilter(e.target.name, e.target.value);
     },
     zoomToPoint(p) {
-      console.log(this.$refs.map);
-      this.$refs.map.leafletObject.flyTo(p.geometry.coordinates.toReversed(), 15);
+      this.$refs.map.leafletObject.flyTo(p.coords, 15);
+      // TODO also highlight on map somehow?
     },
   }
 };
@@ -70,17 +124,21 @@ export default {
           </div>
         </div>
         <div id="controls">
-          <select name="type" id="type-select">
-            <option value="bookstore">BOOKSTORE</option>
+          <!-- changing the selection applies a filter that field 'name' needs to have value 'value' -->
+          <select name="type" @change="toggleSelect($event)" id="type-select">
+            <option value="bookshop">BOOKSTORE</option>
             <option value="library">LIBRARY</option>
             <option value="street_lib">STREET LIBRARY</option>
           </select>
 
-          <TagButton @click="onTagClick" label="second hand" filter="second_hand" />
-          <TagButton @click="onTagClick" label="events" />
-          <TagButton @click="onTagClick" label="coffee/snack" />
+          <!-- second_hand tag according to https://wiki.openstreetmap.org/wiki/Key:second_hand -->
+          <TagButton @click="toggleFilter('second_hand', ['yes', 'only'])" label="second hand" />
+          <!-- openstreetmap has no events tag, needs to be added to the entries manually -->
+          <TagButton @click="toggleFilter('events', true)" label="events" />
+          <!-- same -->
+          <TagButton @click="toggleFilter('snacks', true)" label="coffee/snack" />
 
-          <select name="languages" id="lan-select">
+          <select name="languages" @change="toggleSelect($event)" id="lan-select">
             <option value="">LANGUAGE</option>
             <option value="english">ENGLISH</option>
             <option value="german">GERMAN</option>
@@ -88,12 +146,13 @@ export default {
             <option value="french">FRENCH</option>
           </select>
 
-          <TagButton @click="onTagClick" label="accept orders" />
-          <TagButton @click="onTagClick" label="lessons" />
-          <TagButton @click="onTagClick" label="open after 6pm" />
-          <TagButton @click="onTagClick" label="wheelchair" />
+          <!-- 3 more fields which are not tagged by openstreetmap, so will need to be added manually -->
+          <TagButton @click="toggleFilter('orders', true)" label="accept orders" />
+          <TagButton @click="toggleFilter('lessons', true)" label="lessons" />
+          <TagButton @click="toggleFilter('open_late', true)" label="open after 6pm" />
+          <TagButton @click="toggleFilter('wheelchair', ['yes', 'limited'])" label="wheelchair" />
 
-          <select name="languages" id="lan-select">
+          <select name="languages" @change="toggleSelect($event)" id="lan-select">
             <option value="">SPECIAL TOPIC</option>
             <option value="english">CHILDREN BOOKS</option>
             <option value="german">BIOGRAPHIES</option>
@@ -105,12 +164,21 @@ export default {
 
       <div id="bottom">
         <div id="results">
-          <ListEntry v-for="p in points" :data="p" @click="zoomToPoint(p)"></ListEntry>
+          <ListEntry v-for="p in points" :data="p" ref="items"
+              @click="zoomToPoint(p)"
+              :open="p == highlighted"
+              :class="{ highlighted: p == highlighted }"></ListEntry>
         </div>
 
         <l-map ref="map" v-model:zoom="zoom" :minZoom="10" :center="[52.5105, 13.4061]">
           <l-tile-layer :url="maptilerUrl"></l-tile-layer>
-          <l-circle-marker v-for="p in points" :lat-lng="p.geometry.coordinates.toReversed()" :options="circleMarkerStyle"></l-circle-marker>
+          <l-circle-marker v-for="p in points"
+              :lat-lng="p.coords"
+              @click="selectHighlight(p)"
+              :options="circleMarkerStyle">
+            <!-- hover tooltip -->
+            <l-tooltip :options="hoverTooltipOptions">{{ p.name }}</l-tooltip>
+          </l-circle-marker>
         </l-map>
       </div>
 

@@ -4,7 +4,7 @@ export default {
 
   computed: {
     openingHours() {
-      let hours = this.data.properties['opening_hours'];
+      let hours = this.data['opening_hours'];
       if (typeof hours == "string") {
         return hours.split(';');
       } else {
@@ -21,9 +21,9 @@ export default {
 <template>
   <details class="result_item">
     <summary>
-      {{ this.data.properties['name'] }}
+      {{ this.data['name'] }}
     </summary>
-    <p>{{ this.data.properties['addr:street'] }} {{ this.data.properties['addr:housenumber'] }}, {{ this.data.properties['addr:postcode'] }} {{ this.data.properties['addr:city'] }}</p>
+    <p>{{ this.data['addr:street'] }} {{ this.data['addr:housenumber'] }}, {{ this.data['addr:postcode'] }} {{ this.data['addr:city'] }}</p>
     <p>{{ this.openingHours }}</p>
   </details>
 </template>
@@ -37,7 +37,7 @@ export default {
   cursor: pointer;
 }
 
-.result_item:hover, .result_item:active {
+.result_item.highlighted, .result_item:hover, .result_item:active {
   background-color: #E1C683;
 }
 
