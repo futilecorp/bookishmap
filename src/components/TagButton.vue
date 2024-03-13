@@ -19,7 +19,7 @@
     text-transform: uppercase;
   }
 
-  button.active {
+  button.active, select.active {
     background-color: #8F1409;
   }
 </style>

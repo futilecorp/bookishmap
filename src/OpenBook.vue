@@ -23,8 +23,8 @@ export default {
   data() {
     return {
       allPoints: [], // before filtering
-      filter: {}, // key: value or key: [values,...] pairs
-      points: [], // after filtering
+      filter: [], // an array of [key, value, (morevalues...)] arrays
+      /* points: [], // after filtering */
       highlighted: null, // currently selected shop
       maptilerId: "basic-v2-light/256",
       maptilerApi: "h24s9QHr7NmztAXKJCDP",
@@ -49,13 +49,13 @@ export default {
     maptilerUrl() {
       return `https://api.maptiler.com/maps/${this.maptilerId}/{z}/{x}/{y}.png?key=${this.maptilerApi}`
     },
-    /* points() { */
-    /*   let points = this.allPoints; */
-    /*   for (let field of Object.keys(toRaw(this.filter))) { */
-    /*     points = points.filter((p) => this.filter[field].includes(p[field])); */ 
-    /*   } */
-    /*   return points; */
-    /* } */
+    points() {
+      let points = this.allPoints;
+      for (let [field, ...values] of this.filter) {
+        points = points.filter((p) => values.includes(p[field])); 
+      }
+      return points;
+    },
   },
   methods: {
     getPoints() {
@@ -72,7 +72,7 @@ export default {
               }
               return el;
             });
-            this.points = this.allPoints;
+            /* this.points = this.allPoints; */
         })
     },
     selectHighlight(entry) {
@@ -83,26 +83,40 @@ export default {
       //.scrollIntoView();
       // TODO cancel highlight when map is panned/zoomed? oh yes, good
     },
-    toggleFilter(field, values) {
-      if (this.filter[field] == values || Array.isArray(this.filter[field])) {
-        // remove
-        delete this.filter[field];
-      } else {
-        // add (or override)
-        this.filter[field] = values;
-      }
-      let points = this.allPoints;
-      for (let field of Object.keys(toRaw(this.filter))) {
-        if (Array.isArray(this.filter[field])) {
-          points = points.filter((p) => this.filter[field].includes(p[field])); 
+    isActiveFilter(field) {
+      return this.filter.findIndex((f) => f[0] == field) != -1;
+    },
+    clearFilter() {
+      this.filter.length = 0;
+    },
+    setFilter(field, values) {
+      const pos = this.filter.findIndex((f) => f[0] == field);
+      if (pos != -1) {
+        if (values == null) {
+          // remove
+          this.filter.splice(pos, 1);
         } else {
-          points = points.filter((p) => this.filter[field] == p[field]);
+          // replace
+          this.filter[pos] = [field, ...values];
         }
+      } else if (values != null) {
+        // add new
+        this.filter.push([field, ...values]);
       }
-      this.points = points;
+    },
+    toggleFilter(e) {
+      const [field, ...values] = e.target.__vnode.props['data-filter'];
+      const isAlreadyActive = this.filter.findIndex((f) => f[0] == field && f[1] == values[0]);
+      if (isAlreadyActive == -1) {
+        // add
+        this.setFilter(field, values);
+      } else {
+        // remove
+        this.filter.splice(isAlreadyActive, 1);
+      }
     },
     toggleSelect(e) {
-      this.toggleFilter(e.target.name, e.target.value);
+      this.setFilter(e.target.name, e.target.value == '' ? null : [e.target.value]);
     },
     zoomToPoint(p) {
       this.$refs.map.leafletObject.flyTo(p.coords, 15);
@@ -126,22 +140,23 @@ export default {
           </div>
         </div>
         <div id="controls">
-          <TagButton @click="toggleFilter('clear_all', true)" label="clear all" />
+          <TagButton @click="clearFilter()" label="clear all" />
           <!-- changing the selection applies a filter that field 'name' needs to have value 'value' -->
-          <select name="type" @change="toggleSelect($event)" id="type-select">
+          <select name="type" @change="toggleSelect($event)" id="type-select" :class="{active: this.isActiveFilter('type')}">
+            <option value="">TYPE</option>
             <option value="bookshop">BOOKSTORE</option>
             <option value="library">LIBRARY</option>
             <option value="street_lib">STREET LIBRARY</option>
           </select>
 
           <!-- second_hand tag according to https://wiki.openstreetmap.org/wiki/Key:second_hand -->
-          <TagButton @click="toggleFilter('second_hand', ['yes', 'only'])" label="second hand" />
+          <TagButton @click="toggleFilter" :filter="['second_hand', 'yes', 'only']" label="second hand" :isActive="this.isActiveFilter('second_hand')" />
           <!-- openstreetmap has no events tag, needs to be added to the entries manually -->
-          <TagButton @click="toggleFilter('events', true)" label="events" isActive="false"/>
+          <TagButton @click="toggleFilter" :filter="['events', true]" label="events" :isActive="this.isActiveFilter('events')" />
           <!-- same -->
-          <TagButton @click="toggleFilter('snacks', true)" label="coffee/snack" />
+          <TagButton @click="toggleFilter" :filter="['snacks', true]" label="coffee/snack" :isActive="this.isActiveFilter('snacks')"/>
 
-          <select name="languages" @change="toggleSelect($event)" id="lan-select">
+          <select name="languages" @change="toggleSelect" id="lan-select" :class="{active: this.isActiveFilter('languages')}">
             <option value="">LANGUAGE</option>
             <option value="english">ENGLISH</option>
             <option value="german">GERMAN</option>
@@ -150,17 +165,17 @@ export default {
           </select>
 
           <!-- 3 more fields which are not tagged by openstreetmap, so will need to be added manually -->
-          <TagButton @click="toggleFilter('orders', true)" label="accept orders" />
-          <TagButton @click="toggleFilter('lessons', true)" label="lessons" />
-          <TagButton @click="toggleFilter('open_late', true)" label="open after 6pm" />
-          <TagButton @click="toggleFilter('wheelchair', ['yes', 'limited'])" label="wheelchair" />
+          <TagButton @click="toggleFilter" :filter="['orders', true]" label="accept orders" :isActive="this.isActiveFilter('orders')" />
+          <TagButton @click="toggleFilter" :filter="['lessons', true]" label="lessons" :isActive="this.isActiveFilter('lessons')" />
+          <TagButton @click="toggleFilter" :filter="['open_late', true]" label="open after 6pm" :isActive="this.isActiveFilter('open_late')" />
+          <TagButton @click="toggleFilter" :filter="['wheelchair', 'yes', 'limited']" label="wheelchair" :isActive="this.isActiveFilter('wheelchair')" />
 
-          <select name="languages" @change="toggleSelect($event)" id="lan-select">
+          <select name="topic" @change="toggleSelect" id="topic-select" :class="{active: this.isActiveFilter('topic')}">
             <option value="">SPECIAL TOPIC</option>
-            <option value="english">CHILDREN BOOKS</option>
-            <option value="german">BIOGRAPHIES</option>
-            <option value="polish">QUARTERLY TOPICS</option>
-            <option value="french">SCIENCE FICTION</option>
+            <option value="children">CHILDREN BOOKS</option>
+            <option value="biographies">BIOGRAPHIES</option>
+            <option value="quarterly">QUARTERLY TOPICS</option>
+            <option value="scifi">SCIENCE FICTION</option>
           </select>
         </div>
       </div>
