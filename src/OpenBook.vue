@@ -81,7 +81,7 @@ export default {
       // summary is expanded to display all details
       this.highlighted = entry;
       //.scrollIntoView();
-      // TODO cancel highlight when map is panned/zoomed?
+      // TODO cancel highlight when map is panned/zoomed? oh yes, good
     },
     toggleFilter(field, values) {
       if (this.filter[field] == values || Array.isArray(this.filter[field])) {
@@ -106,7 +106,9 @@ export default {
     },
     zoomToPoint(p) {
       this.$refs.map.leafletObject.flyTo(p.coords, 15);
-      // TODO also highlight on map somehow?
+      // TODO also highlight on map somehow? yessss. also the zooming
+      // is a bit weird, but maybe the highlight of just the selected bookstore
+      // would solve 
     },
   }
 };
@@ -124,6 +126,7 @@ export default {
           </div>
         </div>
         <div id="controls">
+          <TagButton @click="toggleFilter('clear_all', true)" label="clear all" />
           <!-- changing the selection applies a filter that field 'name' needs to have value 'value' -->
           <select name="type" @change="toggleSelect($event)" id="type-select">
             <option value="bookshop">BOOKSTORE</option>
@@ -134,7 +137,7 @@ export default {
           <!-- second_hand tag according to https://wiki.openstreetmap.org/wiki/Key:second_hand -->
           <TagButton @click="toggleFilter('second_hand', ['yes', 'only'])" label="second hand" />
           <!-- openstreetmap has no events tag, needs to be added to the entries manually -->
-          <TagButton @click="toggleFilter('events', true)" label="events" />
+          <TagButton @click="toggleFilter('events', true)" label="events" isActive="false"/>
           <!-- same -->
           <TagButton @click="toggleFilter('snacks', true)" label="coffee/snack" />
 

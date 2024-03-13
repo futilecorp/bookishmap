@@ -6,7 +6,7 @@ export default {
     openingHours() {
       let hours = this.data['opening_hours'];
       if (typeof hours == "string") {
-        return hours.split(';');
+        return hours.replaceAll("; ", "\n");
       } else {
         return "";
       }
@@ -31,17 +31,22 @@ export default {
 
 
 <style>
+p {
+  text-wrap: pretty;
+}
+
 .result_item {
   border: 1px solid black;
   padding: 8px;
   cursor: pointer;
+  white-space: pre;
 }
 
 .result_item.highlighted, .result_item:hover, .result_item:active {
   background-color: #E1C683;
 }
 
-.result_details {
-
+.result_item[open] {
+  background-color: #E1C683;
 }
 </style>
