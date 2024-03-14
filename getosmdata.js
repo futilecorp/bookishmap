@@ -46,3 +46,16 @@ if (!response.ok) {
 	console.log(`wrote ${Object.keys(localData).length} entries to ${DATAFILE}`);
 }
 
+//adding fields to data script
+// const fs = require('fs');
+
+// //read a json file
+// let json = fs.readFileSync('data.json');
+// let obj = JSON.parse(json);
+
+// //add fields
+// Object.keys(obj).forEach(key => obj[key] = {...obj[key], events: "", coffee: "", languages: [], orders: false, lessons: false, topics: []});
+
+// //write to json file
+// json = JSON.stringify(obj);
+// fs.writeFileSync('new_data.json', json);

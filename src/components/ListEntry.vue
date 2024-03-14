@@ -31,8 +31,8 @@ export default {
 
 
 <style>
-p {
-  text-wrap: pretty;
+p, summary {
+  text-wrap: wrap;
 }
 
 .result_item {
