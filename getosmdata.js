@@ -25,17 +25,53 @@ if (!response.ok) {
 
 	let added = 0, changed = 0, unchanged = 0;
 	for (let el of data.elements) {
+
 		if (el.id in localData) {
+			// osm entry is already present in existing data.json
 			// TODO always write coords?
 			if (el.tags != localData[el.id].raw) { // FIXME proper comparison
 				// console.log('has changes');
 			}
+
 		} else {
+			// add new entry (unless it's a private library)
+			if (el.tags.access == 'private') {
+				console.log("Skipping private library");
+				continue;
+			}
+
 			const type = (el.tags.shop == 'books') ? 'bookshop' :
 				(el.tags.amenity == 'library') ? 'library' :
 					(el.tags.amenity == 'public_bookcase') ? 'street_lib' : 'unknown';
 			console.log(`adding new ${type}: ${el.tags.name}`);
-			localData[el.id] = {'type': type, 'coords': [el.lat, el.lon], 'raw': el.tags};
+			const addressLines = [];
+			if (el.tags['addr:street']) {
+				// add as two lines (can be joined by either a comma or line break)
+				addressLines.push(`${el.tags['addr:street']} ${el.tags['addr:housenumber']}`);
+				addressLines.push(`${el.tags['addr:postcode']} ${el.tags['addr:city']}`);
+			} else {
+				addressLines.push('TODO');
+			}
+			localData[el.id] = {
+				id: el.id,
+				type: type,
+				coords: [el.lat, el.lon],
+				raw: el.tags,
+				address: addressLines
+			};
+
+			// if any of the following fields don't exist in the OSM entry, a new 
+			// field is added to the manual entries (filled with the value of the 
+			// second tag, or 'TODO' if none exists
+			const mandatoryfields = {name: null, wheelchair: null, website: 'contact:website', phone: 'contact:phone'};
+
+			for (let field of Object.keys(mandatoryfields)) {
+				if (!(field in el.tags)) {
+					// check backup field for value
+					const fallback = mandatoryfields[field] == null ? null : el.tags[mandatoryfields[field]];
+					localData[el.id][field] = fallback || 'TODO';
+				}
+			}
 			added += 1;
 		}
 	}

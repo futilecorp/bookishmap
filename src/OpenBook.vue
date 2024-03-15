@@ -25,7 +25,7 @@ export default {
       allPoints: [], // before filtering
       filter: [], // an array of [key, value, (morevalues...)] arrays
       /* points: [], // after filtering */
-      highlighted: null, // currently selected shop
+      highlighted: null, // id of currently selected shop
       maptilerId: "basic-v2-light/256",
       maptilerApi: "h24s9QHr7NmztAXKJCDP",
       zoom: 12,
@@ -72,16 +72,16 @@ export default {
               }
               return el;
             });
-            /* this.points = this.allPoints; */
         })
     },
-    selectHighlight(entry) {
+    selectHighlight(id = null) {
       // this method is called when an entry is clicked on the map
       // setting this entry as highlighted adds a class which makes sure the 
       // summary is expanded to display all details
-      this.highlighted = entry;
-      //.scrollIntoView();
-      // TODO cancel highlight when map is panned/zoomed? oh yes, good
+      this.highlighted = id;
+      if (this.highlighted != null) {
+        this.$refs.items.find((e) => e.data.id == this.highlighted).$el.scrollIntoView();
+      }
     },
     isActiveFilter(field) {
       return this.filter.findIndex((f) => f[0] == field) != -1;
@@ -140,7 +140,7 @@ export default {
           </div>
         </div>
         <div id="controls">
-          <TagButton @click="clearFilter()" label="clear all" />
+          <TagButton @click="clearFilter" label="clear all" />
           <!-- changing the selection applies a filter that field 'name' needs to have value 'value' -->
           <select name="type" @change="toggleSelect($event)" id="type-select" :class="{active: this.isActiveFilter('type')}">
             <option value="">TYPE</option>
@@ -184,15 +184,16 @@ export default {
         <div id="results">
           <ListEntry v-for="p in points" :data="p" ref="items"
               @click="zoomToPoint(p)"
-              :open="p == highlighted"
-              :class="{ highlighted: p == highlighted }"></ListEntry>
+              :open="p.id == this.highlighted"
+              :class="{ highlighted: p.id == this.highlighted }"></ListEntry>
         </div>
 
-        <l-map ref="map" v-model:zoom="zoom" :minZoom="10" :center="[52.5105, 13.4061]">
+        <l-map ref="map" v-model:zoom="zoom" :minZoom="10" :center="[52.5105, 13.4061]"
+            @movestart="selectHighlight()">
           <l-tile-layer :url="maptilerUrl"></l-tile-layer>
           <l-circle-marker v-for="p in points"
               :lat-lng="p.coords"
-              @click="selectHighlight(p)"
+              @click="selectHighlight(p.id)"
               :options="circleMarkerStyle">
             <!-- hover tooltip -->
             <l-tooltip :options="hoverTooltipOptions">{{ p.name }}</l-tooltip>

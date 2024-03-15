@@ -23,7 +23,7 @@ export default {
     <summary>
       {{ this.data['name'] }}
     </summary>
-    <p>{{ this.data['addr:street'] }} {{ this.data['addr:housenumber'] }}, {{ this.data['addr:postcode'] }} {{ this.data['addr:city'] }}</p>
+    <p>{{ this.data['address'].join(', ') }}</p>
     <p>{{ this.openingHours }}</p>
   </details>
 </template>
