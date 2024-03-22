@@ -40,6 +40,7 @@ p, summary {
   padding: 8px;
   cursor: pointer;
   white-space: pre;
+  border-radius: 3px;
 }
 
 .result_item.highlighted, .result_item:hover, .result_item:active {

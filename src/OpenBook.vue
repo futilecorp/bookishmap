@@ -116,6 +116,8 @@ export default {
       }
     },
     toggleSelect(e) {
+      //TODO: when street library is selected, the other filters should be grayed out and 
+      //not clickable. For libraries, the filter special topic should be removed
       this.setFilter(e.target.name, e.target.value == '' ? null : [e.target.value]);
     },
     zoomToPoint(p) {
@@ -274,6 +276,7 @@ html, body {
 	margin: 0;
 	height: 100%;
 	font-family: "Compagnon-Medium", sans-serif;
+  background-color: #CADEA4;
 }
 
 #container {
@@ -288,7 +291,7 @@ html, body {
 }
 
 #title {
-	background-color: #ACBE8B;
+	background-color: #CADEA4;
 	padding: 24px;
 }
 
@@ -307,7 +310,7 @@ html, body {
 
 #controls {
 	width: 100%;
-	background-color: #ACBE8B;
+	background-color: #CADEA4;
 	padding: 24px;
 	display: flex;
 	flex-flow: wrap;
@@ -344,24 +347,28 @@ select {
 }
 
 select, .tag {
-	background-color: #0A278B;
-	color: #ACBE8B;
+	background-color: #14286B;
+	color: #CADEA4;
 	margin-bottom: 16px;
 	margin-right: 16px;
+  border-radius: 3px;
 }
 
 #bottom {
 	display: flex;
 	height: 100%;
 	overflow: hidden;
+  margin-bottom: 10px;
 }
 
 #results {
 	width: 400px;
 	height: 100%;
-	background-color: #ACBE8B;
+	background-color: #CADEA4;
 	padding: 8px;
 	overflow: scroll;
+  padding-top: 0;
+  border-radius: 3px;
 }
 
 #map {
