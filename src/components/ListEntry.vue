@@ -36,11 +36,11 @@ p, summary {
 }
 
 .result_item {
-  border: 1px solid black;
+  border: 1px solid var(--main-text-color);
   padding: 8px;
   cursor: pointer;
   white-space: pre;
-  border-radius: 3px;
+  color: var(--main-text-color);
 }
 
 .result_item.highlighted, .result_item:hover, .result_item:active {

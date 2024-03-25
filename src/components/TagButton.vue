@@ -20,6 +20,11 @@
   }
 
   button.active, select.active {
-    background-color: #8F1409;
+    background-color: var(--hl-color);
+  }
+
+  button.active:hover, select.active:hover {
+    background-color: var(--main-text-color);
+    color: var(--bg-color);
   }
 </style>

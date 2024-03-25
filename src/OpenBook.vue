@@ -141,8 +141,12 @@ export default {
             <button id="github" type="button">Github</button>
           </div>
         </div>
-        <div id="controls">
-          <TagButton @click="clearFilter" label="clear all" />
+        <div id="filter">
+          <div id="filtering">
+            <div id="filterTitle">Filter by:</div>
+            <TagButton @click="clearFilter" label="clear all" />
+          </div>
+          <div id="controls">
           <!-- changing the selection applies a filter that field 'name' needs to have value 'value' -->
           <select name="type" @change="toggleSelect($event)" id="type-select" :class="{active: this.isActiveFilter('type')}">
             <option value="">TYPE</option>
@@ -167,7 +171,6 @@ export default {
           </select>
 
           <!-- 3 more fields which are not tagged by openstreetmap, so will need to be added manually -->
-          <TagButton @click="toggleFilter" :filter="['orders', true]" label="accept orders" :isActive="this.isActiveFilter('orders')" />
           <TagButton @click="toggleFilter" :filter="['lessons', true]" label="lessons" :isActive="this.isActiveFilter('lessons')" />
           <TagButton @click="toggleFilter" :filter="['open_late', true]" label="open after 6pm" :isActive="this.isActiveFilter('open_late')" />
           <TagButton @click="toggleFilter" :filter="['wheelchair', 'yes', 'limited']" label="wheelchair" :isActive="this.isActiveFilter('wheelchair')" />
@@ -179,6 +182,10 @@ export default {
             <option value="quarterly">QUARTERLY TOPICS</option>
             <option value="scifi">SCIENCE FICTION</option>
           </select>
+          <TagButton @click="toggleFilter" label=""/>
+          <TagButton @click="toggleFilter" label=""/>
+          <TagButton @click="toggleFilter" label=""/>
+        </div>
         </div>
       </div>
 
@@ -272,11 +279,17 @@ redpink: #C77170
     url("assets/type/Compagnon-Roman.woff2") format("woff2");
 }
 
+:root {
+  --main-text-color: #04295F;
+  --bg-color: #CACE9F;
+  --hl-color: #CA4023;
+}
+
 html, body {
 	margin: 0;
 	height: 100%;
 	font-family: "Compagnon-Medium", sans-serif;
-  background-color: #CADEA4;
+  background-color: var(--bg-color);
 }
 
 #container {
@@ -291,27 +304,52 @@ html, body {
 }
 
 #title {
-	background-color: #CADEA4;
-	padding: 24px;
+  display: flex;
+  flex-direction: column;
+	background-color: var(--bg-color);
+	padding: 12px 0px;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
 }
 
 #title p{
 	font-family: "Compagnon-Bold", serif;
 	font-size: 56px;
 	margin: 0;
+  color: var(--main-text-color);
+  text-align: center;
 }
 
 #title logo{
-	width: 400px;
+	width: 500px;
 	padding: 24px;
 	font-family: "Compagnon-Bold", serif;
 	font-size: 16px;
 }
 
+#filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filtering {
+  display: flex;
+}
+
+#filterTitle {
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  border-left: 1px solid var(--main-text-color);
+  flex-grow: 10;
+  padding: 4px 32px 32px 4px;
+}
+
 #controls {
 	width: 100%;
-	background-color: #CADEA4;
-	padding: 24px;
+  height: fit-content;
+	background-color: var(--bg-color);
 	display: flex;
 	flex-flow: wrap;
 	max-width: -webkit-fill-available;
@@ -325,33 +363,31 @@ html, body {
 }
 
 .tag:hover, select:hover {
-  background-color: #8F1409;
+  background-color: var(--hl-color);
   cursor: pointer;
 }
 
 .tag:active {
-  box-shadow:
-    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  background-color: var(--hl-color);
 }
 
 .tag:visited {
-	background-color: purple;
+	background-color: var(--hl-color);
 }
 
 select {
 	font-size: 16px;
 	font-family: "Compagnon-Medium", sans-serif;
 	border: none;
-	padding: 8px 8px 8px 16px;
 }
 
 select, .tag {
-	background-color: #14286B;
-	color: #CADEA4;
-	margin-bottom: 16px;
-	margin-right: 16px;
-  border-radius: 3px;
+	background-color: var(--bg-color);
+	color: var(--main-text-color);
+  border: 1px solid var(--main-text-color);
+  padding: 4px 32px 32px 4px;
+  flex-grow: 1;
+  text-align: left;
 }
 
 #bottom {
@@ -362,10 +398,9 @@ select, .tag {
 }
 
 #results {
-	width: 400px;
+	width: 500px;
 	height: 100%;
-	background-color: #CADEA4;
-	padding: 8px;
+	background-color: var(--bg-color);
 	overflow: scroll;
   padding-top: 0;
   border-radius: 3px;
