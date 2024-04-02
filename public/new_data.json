@@ -6189,10 +6189,11 @@
 			"name": "Bibliothek Panketal",
 			"operator": "Gemeinde Panketal"
 		},
-		"address": ["HEREIAM Genfer Platz 2", "16341 Panketal"],
+		"address": ["TODO moved? Genfer Platz 2", "16341 Panketal"],
+		"opening_hours": "Mo 08:30-12:00, 14:00-18:00; Tu 09:00-12:00, 14:00-19:00; Th 09:00-12:00, 14:00-18:00",
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "https://bibliothek-panketal.internetopac.de/",
+		"phone": "+493094511190",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -6213,13 +6214,13 @@
 			"website": "https://www.bilder-buch-laden.de/",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
+		"address": ["Zossener Str. 6", "10961 Berlin"],
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Picture books", "Christian"]
 	},
 	"2930469402": {
 		"id": 2930469402,
@@ -6231,7 +6232,7 @@
 			"opening_hours": "Tu-Sa 12:00-18:00; Su 12:00-16:00; Mo off",
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO CLOSED"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -6288,8 +6289,8 @@
 			"website": "https://bibliothek.altlandsberg.de/",
 			"wheelchair": "yes"
 		},
-		"address": ["Krummenseestraße 1", "15345 Altlandsberg"],
-		"name": "TODO",
+		"address": ["TODO: hide Krummenseestraße 1", "15345 Altlandsberg"],
+		"name": "Public Library Altlandsberg",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -6315,14 +6316,14 @@
 			"wheelchair:description": "Kinderbücher"
 		},
 		"address": ["Südstern 4", "10961 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "http://www.krumulus.com/",
+		"phone": "+493025051140",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Children", "Young Adult"]
 	},
 	"3017979331": {
 		"id": 3017979331,
@@ -6344,7 +6345,7 @@
 			"website": "http://www.thalia.de",
 			"wheelchair": "yes"
 		},
-		"address": ["Schönhauser Allee 78-80", "10439 Berlin"],
+		"address": ["TODO hide Schönhauser Allee 78-80", "10439 Berlin"],
 		"phone": "TODO",
 		"events": true,
 		"coffee": false,
@@ -6371,7 +6372,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["Mariendorfer Damm 422", "12107 Berlin"],
+		"address": ["TODO closed ? Mariendorfer Damm 422", "12107 Berlin"],
 		"website": "TODO",
 		"events": true,
 		"coffee": false,
@@ -6395,14 +6396,15 @@
 			"wheelchair": "no"
 		},
 		"address": ["Kastanienallee 79", "10435 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Sa 11:00-19:00",
+		"website": "http://modern-graphics.de/",
+		"phone": "03027493630",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Comics"]
 	},
 	"3110867996": {
 		"id": 3110867996,
@@ -6425,7 +6427,7 @@
 			"toilets:wheelchair": "yes",
 			"wheelchair": "yes"
 		},
-		"address": ["Tempelhofer Damm 200", "12099 Berlin"],
+		"address": ["TODO closed ? Tempelhofer Damm 200", "12099 Berlin"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -6449,9 +6451,10 @@
 			"phone": "+49 30 24657112",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
+		"address": ["Bahnhof Alexanderplatz, Dircksenstraße", "10178 Berlin"],
+		"opening_hours": "Mo-Sa 06:00-21:00, Su 07:00-21:00;",
+		"wheelchair": "yes",
+		"website": "https://www.buchhandlung-ludwig.de/shop/",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -6511,7 +6514,7 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Mehringdamm 50", "10961 Berlin"],
-		"phone": "TODO",
+		"phone": "+49307859510",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -6537,7 +6540,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["Marzahner Promenade 1", "12679 Berlin"],
+		"address": ["TODO hide Marzahner Promenade 1", "12679 Berlin"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -6569,14 +6572,15 @@
 			"website": "https://kalabalik.blackblogs.org/",
 			"wheelchair": "no"
 		},
-		"address": ["Reichenberger Straße 63a", "10999 Berlin"],
-		"phone": "TODO",
+		"address": ["TODO CHANGE Reichenberger Straße 63a", "10999 Berlin"],
+		"opening_hours": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Anarchism"]
 	},
 	"3212386821": {
 		"id": 3212386821,
@@ -6592,7 +6596,7 @@
 			"name": "Bücherfundgrube",
 			"shop": "books"
 		},
-		"address": ["Wrangelstraße 45", "10997 Berlin"],
+		"address": ["TODO changed Wrangelstraße 45", "10997 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -6621,7 +6625,8 @@
 			"wheelchair": "no"
 		},
 		"address": ["Proskauer Straße 4", "10247 Berlin"],
-		"website": "TODO",
+		"opening_hours": "Tu - Sa 16:00 - 20:00",
+		"website": "http://antiquariat-andreas-weigelt.de/",
 		"phone": "+49 170 2716190",
 		"events": true,
 		"coffee": false,
@@ -6650,7 +6655,8 @@
 			"shop": "books"
 		},
 		"address": ["Herderstraße 24", "12163 Berlin"],
-		"wheelchair": "TODO",
+		"second_hand": "yes",
+		"wheelchair": "no",
 		"website": "http://www.primobuch.de/",
 		"phone": "+49370178715",
 		"events": true,
@@ -6681,7 +6687,7 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Brunnenstraße 181", "10119 Berlin"],
-		"phone": "TODO",
+		"phone": "+493097894592",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -6704,7 +6710,7 @@
 			"name": "Prometheus Antiquariat",
 			"shop": "books"
 		},
-		"address": ["Wrangelstraße 76", "10997 Berlin"],
+		"address": ["TODO moved Wrangelstraße 76", "10997 Berlin"],
 		"wheelchair": "TODO",
 		"website": "http://www.prometheus-antiquariat.de/",
 		"phone": "TODO",
@@ -6735,9 +6741,10 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Grunewaldstraße 59", "10825 Berlin"],
+		"opening_hours": "Mo-Fr 09:00-18:30; Sa 09:00-14:00",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English", "French"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -6751,7 +6758,7 @@
 			"phone": "+49 33439 14901",
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"events": true,
@@ -6781,6 +6788,8 @@
 			"wheelchair:description": "Ebenerdig, im Foyer der ver.di-Bundesverwaltung, Rollstuhltür mit Klingel, etwas eng aber zugänglich"
 		},
 		"address": ["Paula-Thiede-Ufer 10", "10179 Berlin"],
+		"opening_hours": "Mo-Th 11:00-14:00;",
+		"name": "der buchladen im ver.di-Haus", 
 		"website": "https://ratgeber.buchhandlung.de/shop/",
 		"phone": "+49 30 69561263",
 		"events": true,
@@ -6800,10 +6809,10 @@
 			"name": "Bücherwald",
 			"wikidata": "Q107284393"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Sredzkistraße 48", "10435 Berlin"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -6819,7 +6828,7 @@
 			"amenity": "public_bookcase",
 			"check_date": "2022-02-27"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide (same as above)"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -6852,6 +6861,7 @@
 			"wheelchair": "no"
 		},
 		"address": ["Bundesallee 133", "12161 Berlin"],
+		"opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-14:00",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -6873,7 +6883,7 @@
 			"amenity": "library",
 			"name": "Gemeindebibliothek"
 		},
-		"address": ["Hauptstraße 9", "16567 Mühlenbecker Land"],
+		"address": ["TODO hide Hauptstraße 9", "16567 Mühlenbecker Land"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -6904,8 +6914,9 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Malteserstraße 74-100", "12249 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"name": "Universitätsarchiv der Freien Universität Berlin",
+		"website": "https://www.fu-berlin.de/sites/uniarchiv",
+		"phone": "+493083858432",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -6925,10 +6936,10 @@
 			"name": "Bücherboxx",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Teltower Damm 230", "14167 Berlin"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -6956,14 +6967,14 @@
 			"wheelchair": "no"
 		},
 		"address": ["Goltzstraße 40", "10781 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "http://www.chatwins.de/",
+		"phone": "+493021756904",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Travel"]
 	},
 	"3518345658": {
 		"id": 3518345658,
@@ -7015,10 +7026,11 @@
 			"wheelchair": "no"
 		},
 		"address": ["Pariser Straße 7", "10719 Berlin"],
+		"opening_hours": "Mo-Fr 12:00-18:30; Sa 12:00-16:00",
 		"website": "https://www.zenit-buch.de/",
-		"phone": "TODO",
+		"phone": "+49 30 883 3680",
 		"events": true,
-		"coffee": false,
+		"coffee": true,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
@@ -7041,15 +7053,16 @@
 			"toilets:wheelchair": "no",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
-		"website": "http://www.buecherbogen-shop.de/",
-		"phone": "+49 30 31 86 95 11",
+		"address": ["Stadtbahnbogen 593", "10623 Berlin"],
+		"opening_hours": "Mo-Sa 10:00-19:00",
+		"website": "buecherbogen",
+		"phone": "+49 30 31869511",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Architecture", "Photography", "Fashion"]
 	},
 	"3551373094": {
 		"id": 3551373094,
@@ -7061,16 +7074,17 @@
 			"opening_hours": "Mo-Fr 10:00-18:30; Sa 11:00-15:00",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Husemannstraße 27", "10435 Berlin"],
+		"opening_hours": "Mo,Tu,Th,Fr 10:00-18:30; Sa 11:00-15:00",
+		"wheelchair": "no",
+		"website": "http://www.mandala-berlin.de/",
+		"phone": "+49304412550",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Atrology", "Zen", "Yoga", "Meditation"]
 	},
 	"3553888907": {
 		"id": 3553888907,
@@ -7091,8 +7105,10 @@
 			"wheelchair": "no"
 		},
 		"address": ["Wilmersdorfer Straße 23", "10585 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"second_hand": "yes",
+		"name": "Bücherfundgrube",
+		"website": "",
+		"phone": "+4915775303686",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7161,7 +7177,7 @@
 			"start_date": "2021-10-02",
 			"wheelchair": "yes"
 		},
-		"address": ["Brandenburger Straße 63", "14467 Potsdam"],
+		"address": ["TODO hide Brandenburger Straße 63", "14467 Potsdam"],
 		"website": "https://www.thalia.de/buchhandlung/5151",
 		"phone": "+49 331 200 0515",
 		"events": true,
@@ -7184,10 +7200,10 @@
 			"operator": "Lions-Club Potsdam",
 			"public_bookcase:type": "glass_cabinet"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["14467 Potsdam"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7216,8 +7232,8 @@
 			"website": "https://www.schreib-leseland.de/",
 			"wheelchair": "no"
 		},
-		"address": ["Am Bahnhof 10", "15831 Blankenfelde-Mahlow"],
-		"phone": "TODO",
+		"address": ["TODO hide Am Bahnhof 10", "15831 Blankenfelde-Mahlow"],
+		"phone": "03379372215",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7246,8 +7262,9 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Albrechtstraße 111", "12167 Berlin"],
+		"second_hand": "yes",
 		"website": "http://www.hennwack-berlin.de/",
-		"phone": "TODO",
+		"phone": "+493051655109",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7275,6 +7292,8 @@
 			"wheelchair": "no"
 		},
 		"address": ["Crellestraße 9", "10827 Berlin"],
+		"second_hand": "yes",
+		"opening_hours": "Mo-Fr 08:30-20:00",
 		"website": "https://www.kulturring.org/",
 		"phone": "+49 30 76765870",
 		"events": true,
@@ -7303,7 +7322,7 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Bundesallee 77", "12161 Berlin"],
-		"website": "TODO",
+		"website": "http://www.thaer.de/",
 		"phone": "+49 30 8527908",
 		"events": true,
 		"coffee": false,
@@ -7331,13 +7350,13 @@
 			"wheelchair": "no"
 		},
 		"address": ["Regensburger Straße 25", "10777 Berlin"],
-		"phone": "TODO",
-		"events": true,
+		"phone": "+493086409262",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Rail transport"]
 	},
 	"3715313031": {
 		"id": 3715313031,
@@ -7359,10 +7378,10 @@
 			"website": "http://buchhandlung-moritzplatz.de",
 			"wheelchair": "yes"
 		},
-		"address": ["Prinzenstraße 85", "undefined undefined"],
+		"address": ["Prinzenstraße 85", "10969 Berlin"],
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -7377,14 +7396,15 @@
 			"website": "http://www.literaturhandlung.de/",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
-		"phone": "TODO",
+		"address": ["Joachimsthaler Str. 13", "10719 Berlin"],
+		"opening_hours": "Mo-Fr 11:00-18:00;",
+		"phone": "+49308824250",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Hebrew"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Judaism"]
 	},
 	"3792456760": {
 		"id": 3792456760,
@@ -7402,13 +7422,13 @@
 			"website": "https://groberunfug.de/",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
+		"address": ["Torstraße 75", "10119 Berlin"],
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Comics"]
 	},
 	"3792702579": {
 		"id": 3792702579,
@@ -7435,7 +7455,7 @@
 			"shop": "books"
 		},
 		"address": ["Ebertystraße 22", "10249 Berlin"],
-		"wheelchair": "TODO",
+		"wheelchair": "no",
 		"website": "http://roman-und-comicladen.de/",
 		"phone": "+49 30 4267085",
 		"events": true,
@@ -7443,7 +7463,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Novels", "Comics"]
 	},
 	"3801731182": {
 		"id": 3801731182,
@@ -7459,10 +7479,10 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q108649872"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Bahnhofstraße 1A", "15732 Eichwalde"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7481,10 +7501,11 @@
 			"wikidata": "Q856510",
 			"wikimedia_commons": "Category:Bibliothek des Deutschen Bundestages"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Adele-Schreiber-Krieger-Straße 1", "10117 Berlin"],
+		"opening_hours": "Mo-Th 09:00-17:00; Fr 09:00-14:00;",
+		"wheelchair": "limited",
+		"website": "https://www.bundestag.de/en/documents/library/library-197902",
+		"phone": "+493022733073",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7509,10 +7530,11 @@
 			"website": "https://www.braunundhassenpflug.de/"
 		},
 		"address": ["Fischerhüttenstraße 79", "14163 Berlin"],
-		"wheelchair": "TODO",
+		"opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-14:00;",
+		"wheelchair": "no",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -7537,8 +7559,10 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Nollendorfstraße 17", "10777 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Fr 14:00-19:00; Sa 12:00-14:00",
+		"second_hand": "yes",
+		"website": "",
+		"phone": "0302169662",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7565,7 +7589,7 @@
 			"phone": "+49 170 824 49 66",
 			"shop": "books"
 		},
-		"address": ["Nollendorfstraße 19", "10777 Berlin"],
+		"address": ["TODO hide closed Nollendorfstraße 19", "10777 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"events": true,
@@ -7605,7 +7629,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Queer", "LBGTI+"]
 	},
 	"3837620248": {
 		"id": 3837620248,
@@ -7624,8 +7648,8 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Lützowstraße 27", "10785 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "http://www.berlin.de/stadtbibliothek-mitte/bibliotheken/bibliothek-tiergarten-sued/",
+		"phone": "+493023003088",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7655,7 +7679,7 @@
 			"shop": "books",
 			"website": "https://www.thalia.de/shop/home/filialen/showDetails/5403/"
 		},
-		"address": ["Chausseestraße 1", "15745 Wildau"],
+		"address": ["TODO hide Chausseestraße 1", "15745 Wildau"],
 		"wheelchair": "TODO",
 		"events": true,
 		"coffee": false,
@@ -7683,7 +7707,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["Frankfurter Allee 113-117", "10365 Berlin"],
+		"address": ["TODO hide Frankfurter Allee 113-117", "10365 Berlin"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -7715,7 +7739,7 @@
 			"ref": "32",
 			"wheelchair": "yes"
 		},
-		"address": ["Hermann-Elflein-Straße 32", "14467 Potsdam"],
+		"address": ["TODO hide closed Hermann-Elflein-Straße 32", "14467 Potsdam"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -7746,8 +7770,9 @@
 			"wheelchair:description": "Zugang über kleine Rampe"
 		},
 		"address": ["Erich-Kurz-Straße 9", "10319 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Fr 10:00-18:00, Sa 10:00-14:00",
+		"website": "http://www.buchhandlung-am-tierpark.de/",
+		"phone": "+493051009813",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7772,7 +7797,7 @@
 			"shop": "books",
 			"wheelchair": "no"
 		},
-		"address": ["Florastraße 88/89", "13187 Berlin"],
+		"address": ["TODO hide closed Florastraße 88/89", "13187 Berlin"],
 		"website": "https://buchsegler.buchkatalog.de",
 		"phone": "TODO",
 		"events": true,
@@ -7810,7 +7835,7 @@
 			"website": "https://www.kulturkaufhaus.de/",
 			"wheelchair": "yes"
 		},
-		"address": ["Friedrichstraße 90", "10117 Berlin"],
+		"address": ["TODO hide ? Friedrichstraße 90", "10117 Berlin"],
 		"phone": "+49 30 20251111",
 		"events": true,
 		"coffee": false,
@@ -7838,10 +7863,11 @@
 			"wheelchair": "no"
 		},
 		"address": ["Winsstraße 72", "10405 Berlin"],
+		"opening_hours": "Mo-Sa 11:00-18:00;",
 		"website": "http://www.einar-und-bert.de/",
-		"phone": "TODO",
+		"phone": "+4930443528511",
 		"events": true,
-		"coffee": false,
+		"coffee": true,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
@@ -7871,11 +7897,12 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Gipsstraße 12", "10119 Berlin"],
+		"opening_hours": "Mo 14:00-19:00; Tu-Fr 11:00-19:00; Sa 11:00-18:00",
 		"website": "https://zadigbuchhandlung.de/",
 		"phone": "+49 30 28099905",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["French"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -7889,10 +7916,10 @@
 			"opening_hours": "Mo-Fr 09:30-12:30,14:00-18:00; Sa 09:30-12:30",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Rudolf-Breitscheid-Straße 24", "15569 Woltersdorf"],
+		"wheelchair": "no",
+		"website": "https://buchhandlung-woltersdorf.de/",
+		"phone": "+4933625405",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -7935,12 +7962,12 @@
 			"amenity": "public_bookcase",
 			"fixme:wikipedia": "The wikipedia tag links to a list article, not an article about this specific feature. Needs a better link, or maybe rename \"wikipedia\" to \"related:wikipedia\"? See osm wiki - key:wikipedia : \"only provide links to articles which are 'about the feature'\"",
 			"name": "Öffentlicher Bücherschrank",
-			"operator": "Stadt Bernau bei Berlin",
+			"operator": "Stad Bernau bei Berlin",
 			"wheelchair": "yes",
 			"wikidata": "Q108626117",
 			"wikipedia": "de:Liste öffentlicher Bücherschränke in Brandenburg"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide "],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -7973,7 +8000,7 @@
 		"phone": "+493028095519",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Italian", "Portugues", "Spanish", "English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -7991,7 +8018,7 @@
 			"name": "Umweltbibliothek",
 			"operator": "Umweltbundesamt"
 		},
-		"address": ["Bismarckplatz 1", "14193 Berlin"],
+		"address": ["TODO hide closed ? Bismarckplatz 1", "14193 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -8021,7 +8048,8 @@
 			"start_date": "1986-02",
 			"wheelchair": "no"
 		},
-		"address": ["Hauptstraße 154", "10827 Berlin"],
+		"address": ["TODO hide closed Hauptstraße 154", "10827 Berlin"],
+		"second_hand": "yes",
 		"website": "http://buecherhalle.net/",
 		"phone": "+49 30 7815669",
 		"events": true,
@@ -8073,11 +8101,11 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q108631337"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
-		"events": true,
+		"address": ["Richard-Israel-Straße 4d", "15732 Schulzendorf"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -8133,7 +8161,7 @@
 			"wheelchair": "yes",
 			"wikidata": "Q28738451"
 		},
-		"address": ["Platanenallee 6", "15738 Zeuthen"],
+		"address": ["TODO hide Platanenallee 6", "15738 Zeuthen"],
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -8162,7 +8190,7 @@
 			"toilets:access": "permissive",
 			"wheelchair": "yes"
 		},
-		"address": ["Spandauer Straße 188", "14612 Falkensee"],
+		"address": ["TODO hide Spandauer Straße 188", "14612 Falkensee"],
 		"website": "http://www.leseratte-falkensee.de/",
 		"phone": "+49 3322 422 8208",
 		"events": true,
@@ -8188,7 +8216,7 @@
 			"wheelchair": "limited",
 			"wikidata": "Q28681904"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "https://www.stadtbibliothek-falkensee.de/",
 		"phone": "+49 3322 22589",
 		"events": true,
@@ -8214,14 +8242,15 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Schönwalder Allee 26/2", "13587 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Fr 09:30-18:00; Sa 09:30-14:00",
+		"website": "http://www.evangelisches-johannesstift.de/buchhandlung",
+		"phone": "+493033609245",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Care", "Grief", "Hospice", "Theology", "Community work", "Catechesis", "Ecumenism", "Spirituality"]
 	},
 	"4114649179": {
 		"id": 4114649179,
@@ -8242,8 +8271,8 @@
 			"wikidata": "Q28738920"
 		},
 		"address": ["Niederkirchnerstraße 8", "10963 Berlin"],
-		"phone": "TODO",
-		"events": true,
+		"phone": "+4930 254509-23",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -8267,7 +8296,7 @@
 			"phone": "+49 33056 69230",
 			"website": "http://www.bibliothek-glienicke.eu/"
 		},
-		"address": ["Hauptstraße 19", "16548 Glienicke/Nordbahn"],
+		"address": ["TODO hide Hauptstraße 19", "16548 Glienicke/Nordbahn"],
 		"wheelchair": "TODO",
 		"events": true,
 		"coffee": false,
@@ -8292,13 +8321,13 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Bänschstraße 44", "10247 Berlin"],
-		"phone": "TODO",
+		"phone": "+493041724996",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Children's books"]
 	},
 	"4221527005": {
 		"id": 4221527005,
@@ -8336,7 +8365,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Asian studies", "African studies", "Islamic Theology"]
 	},
 	"4226607107": {
 		"id": 4226607107,
@@ -8356,14 +8385,15 @@
 			"website": "https://www.bluetoons.de/",
 			"wheelchair": "limited"
 		},
-		"address": ["Prenzlauer Allee 46", "undefined undefined"],
+		"address": ["Prenzlauer Allee 46", "10405 Berlin"],
+		"opening_hours": "Mo-Fr 14:00-19:00, Sa 11:00-17:00",
 		"phone": "+49(0)30-66408157",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Comics", "Graphic novel"]
 	},
 	"4271022996": {
 		"id": 4271022996,
@@ -8410,7 +8440,7 @@
 			"website": "https://www.buchhandlung-kladow.de/"
 		},
 		"address": ["Kladower Damm 386", "14089 Berlin"],
-		"wheelchair": "TODO",
+		"wheelchair": "no",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -8433,13 +8463,14 @@
 			"wheelchair": "no"
 		},
 		"address": ["Choriner Straße 49", "10435 Berlin"],
-		"phone": "TODO",
+		"opening_hours": "Mundo azul has no regular opening hours from January 2023. Please set an appointment or send us a request to info@mundoazul.de.",
+		"phone": "03049853834",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Arabic", "English", "French", "Italian", "Japanese", "Korean", "Persian", "Polish", "Portugues", "Russian", "Spanish", "Turkish", "Ukrainian"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Children's books", "Silent Books"]
 	},
 	"4299136189": {
 		"id": 4299136189,
@@ -8465,11 +8496,12 @@
 			"wheelchair": "no"
 		},
 		"address": ["Wörther Straße 27", "10405 Berlin"],
+		"second_hand":"yes",
 		"website": "http://www.saintgeorgesbookshop.com/",
 		"phone": "+49 30 8179833",
-		"events": true,
+		"events": false,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -8491,7 +8523,7 @@
 			"opening_hours": "Mo-Sa 12:00-20:00",
 			"shop": "books"
 		},
-		"address": ["Skalitzer Straße 68", "10997 Berlin"],
+		"address": ["TODO hide Skalitzer Straße 68", "10997 Berlin"],
 		"wheelchair": "TODO",
 		"website": "http://www.mottodistribution.com/site/?page_id=1020",
 		"phone": "TODO",
@@ -8545,8 +8577,8 @@
 			"shop": "books",
 			"website": "http://www.derklosterladenberlin.de"
 		},
-		"address": ["Heckerdamm 232", "13627 undefined"],
-		"wheelchair": "TODO",
+		"address": ["Heckerdamm 232", "13627 Berlin"],
+		"wheelchair": "+493046790375",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -8570,10 +8602,11 @@
 			"wheelchair": "no"
 		},
 		"address": ["Knesebeckstraße 33-34", "10623 Berlin"],
-		"phone": "TODO",
+		"opening_hours": "Mo-We 10:00-18:00; Th, Fr 10:00-19:00; Sa 10:00-17:00",
+		"phone": "+49308811122",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -8630,7 +8663,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Children's books"]
 	},
 	"4392112944": {
 		"id": 4392112944,
@@ -8645,9 +8678,9 @@
 			"website": "https://buecherboxx.com/",
 			"wikidata": "Q107263919"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"address": ["Müllerstraße 74", "13349 Berlin"],
+		"wheelchair": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -8664,16 +8697,16 @@
 			"opening_hours": "Mo-Su 09:00-18:00",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Genslerstraße 66", "13055 Berlin"],
+		"wheelchair": "no",
+		"website": "http://www.buchhandlung89.de/",
+		"phone": "+4930 98 60 82 507",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["History and Life in Communism"]
 	},
 	"4408318925": {
 		"id": 4408318925,
@@ -8689,7 +8722,7 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q108625947"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -8717,7 +8750,8 @@
 			"shop": "books"
 		},
 		"address": ["Rungestraße 20", "10179 Berlin"],
-		"wheelchair": "TODO",
+		"second_hand": "yes",
+		"wheelchair": "no",
 		"website": "https://www.rotes-antiquariat.de/",
 		"phone": "+49 30 27593500",
 		"events": true,
@@ -8725,7 +8759,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["History of socialism", "History of workers' movement", "Art and literature of classical modernism", "The artistic avant-gardes of Easter Europe"]
 	},
 	"4432723694": {
 		"id": 4432723694,
@@ -8748,7 +8782,8 @@
 			"wikidata": "Q110501434"
 		},
 		"address": ["Prenzlauer Allee 227-228", "10405 Berlin"],
-		"wheelchair": "TODO",
+		"opening_hours": "Mo-Sa 08:00-20:00;",
+		"wheelchair": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -8771,11 +8806,11 @@
 			"website": "https://buchhafen-berlin.de/"
 		},
 		"address": ["Okerstraße 1", "12049 Berlin"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"wheelchair": "no",
+		"phone": "+493023948508",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Turkish", "English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -8790,7 +8825,7 @@
 			"website": "http://www.buchhandlung-rabenow.de/",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide closed "],
 		"phone": "TODO",
 		"events": true,
 		"coffee": false,
@@ -8821,7 +8856,7 @@
 		},
 		"address": ["Amsterdamer Straße 27", "13347 Berlin"],
 		"phone": "+49 30 455 67 01",
-		"events": true,
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -8852,7 +8887,7 @@
 			"shop": "books"
 		},
 		"address": ["Hauptstraße 27", "10827 Berlin"],
-		"wheelchair": "TODO",
+		"wheelchair": "no",
 		"website": "http://berlin.kabbalah.com/",
 		"phone": "+493078713580",
 		"events": true,
@@ -8860,7 +8895,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Kabbalah"]
 	},
 	"4503161445": {
 		"id": 4503161445,
@@ -8875,8 +8910,9 @@
 			"website": "https://www.buchhandlung-seitenblick.de/",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
-		"events": true,
+		"address": ["Falkenpl. 9 A", "13505 Berlin"],
+		"opening_hours": "Mo-Fr 09:30-13:00,15:00-18:00; Sa 09:30-13:00",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -8898,9 +8934,9 @@
 			"wheelchair": "no",
 			"wikidata": "Q107259167"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Kleine Gertraudenstraße 19", "10178 Berlin"],
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -8921,9 +8957,9 @@
 			"public_bookcase:type": "phone_box",
 			"website": "https://buecherboxx.wordpress.com/"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"address": ["Osloer Str. 12", "13359 Berlin"],
+		"wheelchair": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -8944,7 +8980,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -8995,7 +9031,7 @@
 			"website": "https://www.weltbild.de",
 			"wheelchair": "yes"
 		},
-		"address": ["Hellersdorfer Straße 77-83", "12619 Berlin"],
+		"address": ["TODO hide Hellersdorfer Straße 77-83", "12619 Berlin"],
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -9020,7 +9056,7 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Schleiermacherstraße 25", "10961 Berlin"],
-		"events": true,
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -9042,10 +9078,12 @@
 			"website": "https://antiquariat-wagner.de/",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
-		"events": true,
+		"address": ["Grünstraße 11", "12555 Berlin"],
+		"opening_hours": "Mo-Fr 11:00-16:00;",
+		"second_hand": "yes",
+		"events": false,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -9067,7 +9105,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["Unter den Eichen 62", "12203 Berlin"],
+		"address": ["TODO hide closed ? Unter den Eichen 62", "12203 Berlin"],
 		"website": "TODO",
 		"phone": "+49 30 8314004",
 		"events": true,
@@ -9101,9 +9139,11 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Britzer Straße 5", "12439 Berlin"],
+		"opening_hours": "Mo-Su 10:00-18:00;",
+		"name": "Dokumentationszentrum NS-Zwangsarbeit",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English", "Italian", "Polish", "Russian", "French"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -9125,9 +9165,9 @@
 			"shop": "books"
 		},
 		"address": ["Drakestraße 39", "12205 Berlin"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"wheelchair": "no",
+		"website": "http://www.genialokal.de/buchhandlung/berlin-lichterfelde/winkler",
+		"phone": "+493084418852",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -9171,7 +9211,7 @@
 			"website": "https://www.alpha-woltersdorf.de/",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO moved ?"],
 		"phone": "TODO",
 		"events": true,
 		"coffee": false,
@@ -9189,8 +9229,8 @@
 			"name": "Stadtteilbibliothek Rudow",
 			"opening_hours": "Mo-Th 11:00-16:00"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
+		"address": ["Alt-Rudow 45, 12357 Berlin"],
+		"wheelchair": "TODO moved ?",
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -9212,12 +9252,12 @@
 			"type": "russian",
 			"website": "https://gelikon-shop.com/"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"address": ["Kantstraße 84", "10627 Berlin"],
+		"wheelchair": "no",
+		"phone": "0303234815",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Russian"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -9239,12 +9279,13 @@
 			"wheelchair": "no"
 		},
 		"address": ["Lübbener Straße 14", "10997 Berlin"],
+		"opening_hours": "Tu-Su 14:00-18:00",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Political philosophy", "Art and film theory", "Queer studies", "Gender studies", "Postcolonial studies"]
 	},
 	"4761809022": {
 		"id": 4761809022,
@@ -9263,10 +9304,10 @@
 			"wheelchair": "no"
 		},
 		"address": ["Schlüterstraße 39", "10629 Berlin"],
-		"phone": "TODO",
+		"phone": "+493088720929",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -9279,13 +9320,15 @@
 			"name": "The Berlin Book Nook",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Pflügerstraße 63, 12047 Berlin"],
+		"opening_hours": "Mo-Sa 12:00-18:00",
+		"second_hand": "yes",
+		"wheelchair": "no",
+		"website": "http://theberlinbooknook.blogspot.de/",
+		"phone": "+4915228802490",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -9309,13 +9352,13 @@
 			"website": "https://www.berlin.de/sen/bildung/unterricht/medien/medienforum/"
 		},
 		"address": ["Levetzowstraße 1-2", "10555 Berlin"],
-		"wheelchair": "TODO",
+		"wheelchair": "no",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Education", "Pedagogy"]
 	},
 	"4806499594": {
 		"id": 4806499594,
@@ -9362,10 +9405,12 @@
 			"website": "https://anothercountry.de"
 		},
 		"address": ["Riemannstraße 7", "undefined undefined"],
-		"wheelchair": "TODO",
+		"opening_hours": "Mo 14:00-20:00; Tu-Fr 11:00-20:00; Sa 12:00-18:00;",
+		"second_hand": "yes",
+		"wheelchair": "no",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -9386,10 +9431,10 @@
 			"shop": "books"
 		},
 		"address": ["Fischerhüttenstraße 83", "14163 Berlin"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
-		"events": true,
+		"wheelchair": "no",
+		"website": "http://www.genialokal.de/buchhandlung/berlin-zehlendorf/suedwestlicher-divan",
+		"phone": "+493081499663",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -9410,7 +9455,7 @@
 			"name": "Ortsteilbibliothek",
 			"opening_hours": "Mo 10:00-12:00; Tu 15:00-19:00, Th 15:00-18:00; Sa[1] 10:00-12:00; PH off"
 		},
-		"address": ["Lindenberger Straße 1b", "16356 Ahrensfelde"],
+		"address": ["TODO hide Lindenberger Straße 1b", "16356 Ahrensfelde"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -9435,10 +9480,11 @@
 			"website": "https://www.kohlhaasbuch.de/"
 		},
 		"address": ["Fasanenstraße 23", "10719 Berlin"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Sa 10:00-18:00; ",
+		"wheelchair": "no",
+		"phone": "+49308825044",
 		"events": true,
-		"coffee": false,
+		"coffee": true,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
@@ -9465,7 +9511,7 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Kastanienallee 97", "10435 Berlin"],
-		"phone": "TODO",
+		"phone": "+493044308385",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -9524,14 +9570,15 @@
 			"wheelchair": "no"
 		},
 		"address": ["Florastraße 34b", "13187 Berlin"],
+		"opening_hours": "Mo-Fr 13:00-18:00",
 		"website": "https://www.ventil-vegan.de",
-		"phone": "TODO",
+		"phone": "+493085737271",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Vegan"]
 	},
 	"4986873634": {
 		"id": 4986873634,
@@ -9554,7 +9601,7 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Treskowallee 110", "10318 Berlin"],
-		"events": true,
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -9589,7 +9636,7 @@
 			"wikidata": "Q2417184",
 			"wikipedia": "de:Theodor-Fontane-Archiv"
 		},
-		"address": ["Große Weinmeisterstraße 46/47", "14469 Potsdam"],
+		"address": ["TODO hide Große Weinmeisterstraße 46/47", "14469 Potsdam"],
 		"wheelchair": "TODO",
 		"website": "https://www.fontanearchiv.de/",
 		"phone": "+49 331 201 396",
@@ -9608,7 +9655,7 @@
 			"amenity": "public_bookcase",
 			"opening_hours": "24/7"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide "],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -9633,9 +9680,9 @@
 			"public_bookcase:type": "phone_box",
 			"website": "https://www.obersee-orankesee.de/"
 		},
-		"address": ["TODO"],
-		"name": "TODO",
-		"wheelchair": "TODO",
+		"address": ["Waldowstraße 43", "13053 Berlin"],
+		"name": "Bibliothek - free library box",
+		"wheelchair": "no",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -9654,7 +9701,7 @@
 			"indoor": "yes",
 			"level": "1"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -9685,12 +9732,12 @@
 			"shop": "books"
 		},
 		"address": ["Hauptstraße 29", "10827 Berlin"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"wheelchair": "limited",
+		"website": "https://shops.oxfam.de/berlin-buchshop?utm_source=gmaps&utm_medium=verzeichnis&utm_campaign=ueberregional&utm_term=Allgemein",
+		"phone": "+493070094690",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -9706,9 +9753,10 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Akazienstraße 26", "10823 Berlin"],
+		"opening_hours": "Mo-Fr 10:00-18:30; Sa 10:00-16:00",
+		"website": "http://www.akazienbuchhandlung.de/",
+		"phone": "+49307881278",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -9730,10 +9778,10 @@
 			"website": "https://www.mackensen.net/",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
+		"address": ["Langenscheidtstraße 4", "10827 Berlin"],
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -9752,10 +9800,10 @@
 			"operator": "BücherboXX",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Markusplatz", "12167 Berlin"],
+		"wheelchair": "no",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -9783,8 +9831,9 @@
 			"wheelchair": "no"
 		},
 		"address": ["Martin-Luther-Straße 113", "10825 Berlin"],
-		"phone": "TODO",
-		"events": true,
+		"second_hand": "yes",
+		"phone": "+49307822491",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -9801,9 +9850,9 @@
 			"shop": "books",
 			"website": "http://www.buchhandlung-binger.de/"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"address": ["Welserstraße 28", "10777 Berlin"],
+		"wheelchair": "no",
+		"phone": "+49302181750",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -9844,7 +9893,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Musicology"]
 	},
 	"5260240422": {
 		"id": 5260240422,
@@ -9865,7 +9914,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["Landsberger Chaussee 17", "undefined undefined"],
+		"address": ["TODO hide Landsberger Chaussee 17", "undefined undefined"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -9892,13 +9941,13 @@
 			"website": "https://zabriskie.de"
 		},
 		"address": ["Reichenberger Straße 150", "10999 Berlin"],
-		"wheelchair": "TODO",
+		"wheelchair": "no",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Sub/cultural and natural phenomena"]
 	},
 	"5274339333": {
 		"id": 5274339333,
@@ -9945,8 +9994,8 @@
 			"website": "https://www.peter-weiss-bibliothek.de/"
 		},
 		"address": ["Hellersdorfer Promenade 24", "12627 Berlin"],
-		"wheelchair": "TODO",
-		"events": true,
+		"wheelchair": "no",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -9972,7 +10021,7 @@
 			"website": "https://www.berlin.de/stadtbibliothek-reinickendorf/bibliotheken/bibliothek-im-maerkischen-viertel/bibliothek-im-maerkischen-viertel-im-fontane-haus-336916.php"
 		},
 		"address": ["Wilhelmsruher Damm 142c", "13439 Berlin"],
-		"wheelchair": "TODO",
+		"wheelchair": "limited",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10024,14 +10073,14 @@
 			"wheelchair": "no"
 		},
 		"address": ["Goltzstraße 49", "10781 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "http://www.berliner-geschichtswerkstatt.de/",
+		"phone": "+49302154450",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Berlin's history"]
 	},
 	"5408316062": {
 		"id": 5408316062,
@@ -10054,7 +10103,7 @@
 			"shop": "books",
 			"website": "https://www.hugendubel.de/de/branch?branchId=9905"
 		},
-		"address": ["Johannisthaler Chaussee 303", "12351 Berlin"],
+		"address": ["TODO hide Johannisthaler Chaussee 303", "12351 Berlin"],
 		"wheelchair": "TODO",
 		"events": true,
 		"coffee": false,
@@ -10081,8 +10130,9 @@
 			"wheelchair": "no"
 		},
 		"address": ["Hauptstraße 102", "10827 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"second_hand": "yes",
+		"website": "",
+		"phone": "+49307820172",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10104,11 +10154,12 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Falckensteinstraße undefined", "undefined undefined"],
+		"opening_hours": "Mo-Fr 10:00-19:00; Sa 12:00-18:00; ",
 		"website": "https://www.ebertundweber.de",
-		"phone": "TODO",
+		"phone": "+493069565193",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -10135,10 +10186,10 @@
 		},
 		"address": ["Philippstraße 11/12", "10115 Berlin"],
 		"wheelchair": "TODO",
-		"phone": "TODO",
-		"events": true,
+		"phone": "+4930450576078",
+		"events": false,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English", "French", "Spanish", "Italian", "Dutch"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -10158,8 +10209,10 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Oranienstraße 14a", "10999 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Fr 14:00-20:00",
+		"second_hand": "yes",
+		"website": "http://www.muessiggang.net/",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10182,10 +10235,11 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Schönhauser Allee 43", "undefined undefined"],
-		"phone": "TODO",
+		"opening_hours": "Mo-Sa 10:00-19:00;",
+		"phone": "+493048492370",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -10203,10 +10257,10 @@
 			"operator": "Mieterbeirat der Degewo;Verein Offensiv 91",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Pablo-Neruda-Straße 12", "12559 Berlin"],
+		"wheelchair": "no",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10244,7 +10298,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Picture books", "Children's books", "Young adult"]
 	},
 	"5643477411": {
 		"id": 5643477411,
@@ -10267,6 +10321,7 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Fuchssteinerweg 17", "13465 Berlin"],
+		"opening_hours": "Mo 13:00-19:00; Tu 13:00-17:00; Th 13:00-19:00; Fr 11:00-17:00; ",
 		"website": "https://www.berlin.de/stadtbibliothek-reinickendorf/bibliotheken/stadtteilbibliothek-frohnau/artikel.336740.php",
 		"phone": "+49 30 4010 9171",
 		"events": true,
@@ -10297,7 +10352,8 @@
 			"wikimedia_commons": "Category:Kurt-Tucholsky-Bibliothek (Berlin-Moabit)"
 		},
 		"address": ["Rostocker Straße 32b", "10553 Berlin"],
-		"phone": "TODO",
+		"opening_hours": "Mo-Fr 12:30-18:00; Sa,Su,PH off",
+		"phone": "+493039480264",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10327,7 +10383,7 @@
 			"website": "https://www.thalia.de/shop/home/filialen/showDetails/5626/",
 			"wheelchair": "yes"
 		},
-		"address": ["Döberitzer Weg 3", "14624 Dallgow-Döberitz"],
+		"address": ["TODO hide Döberitzer Weg 3", "14624 Dallgow-Döberitz"],
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10356,13 +10412,13 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Knesebeckstraße 1-2", "10623 Berlin"],
-		"phone": "TODO",
+		"phone": "+493025400274",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Design", "Architecture", "Bauhaus", "Art"]
 	},
 	"5766003733": {
 		"id": 5766003733,
@@ -10385,7 +10441,7 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Albrechtstraße 10", "12165 Berlin"],
-		"events": true,
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -10401,9 +10457,10 @@
 			"shop": "books",
 			"wheelchair": "limited"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Carl-Schurz-Straße 53", "13597 Berlin"],
+		"opening_hours": "Mo-Fr 09:30-18:30; Sa 09:30-14:00",
+		"website": "http://www.dorotheenstaedtische-buchhandlung.de/",
+		"phone": "+493033607946",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10426,7 +10483,7 @@
 			"name": "Gemeindebibliothek Dallgow-Döberitz",
 			"opening_hours": "Mo 10:00-13:00; Tu 10:00-13:00,14:00-18:00; We 10:00-18:00"
 		},
-		"address": ["Bahnhofstraße 151", "14624 Dallgow-Döberitz"],
+		"address": ["TODO hide Bahnhofstraße 151", "14624 Dallgow-Döberitz"],
 		"wheelchair": "TODO",
 		"website": "https://www.dallgow.de/verzeichnis/visitenkarte.php?mandat=100983",
 		"phone": "TODO",
@@ -10456,8 +10513,9 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Wilhelmstraße 68a", "10117 Berlin"],
-		"phone": "TODO",
-		"events": true,
+		"opening_hours": "Mo-Th 09:00-18:00; Fr 09:00-15:00; Sa-Su closed",
+		"phone": "+493022489544",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -10472,7 +10530,7 @@
 			"name": "Antiquariat",
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide "],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -10498,7 +10556,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["Wühlischstraße 12", "10245 Berlin"],
+		"address": ["TODO hide Wühlischstraße 12", "10245 Berlin"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -10529,9 +10587,9 @@
 			"operator": "Bezirksamt Spandau von Berlin"
 		},
 		"address": ["Gartenfelder Straße 104", "13599 Berlin"],
-		"wheelchair": "TODO",
+		"wheelchair": "yes",
 		"website": "https://www.berlin.de/stadtbibliothek-spandau/bibliotheken/haselhorst/stadtteilbibliothek-haselhorst-182097.php",
-		"phone": "TODO",
+		"phone": "+4930902798693",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10549,11 +10607,12 @@
 			"name": "Patientenbibliothek",
 			"opening_hours": "Mo,Tu,Fr 13:00-17:00; Th 15:00-18:00"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
-		"events": true,
+		"address": ["Bonhoefferweg 4", "10117 Berlin"],
+		"opening_hours": "Mo,Tu,Th 12:00-16:00; Fr 12:00-15:00",
+		"wheelchair": "yes",
+		"website": "https://patientenbibliothek.charite.de/",
+		"phone": "+4930450573043",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -10575,7 +10634,7 @@
 			"website": "https://buchhandlung-am-mexikoplatz.buchhandlung.de/shop/"
 		},
 		"address": ["Limastraße 2", "undefined undefined"],
-		"wheelchair": "TODO",
+		"wheelchair": "no",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10591,7 +10650,7 @@
 			"amenity": "library",
 			"name": "Bibliothek"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -10623,8 +10682,8 @@
 			"shop": "books"
 		},
 		"address": ["Schönfließer Straße 9", "16540 Hohen Neuendorf"],
-		"wheelchair": "TODO",
-		"website": "TODO",
+		"wheelchair": "limited",
+		"website": "http://www.havelbuch.de/",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -10649,7 +10708,7 @@
 			"opening_hours": "Mo-Fr 08:00-14:00",
 			"operator": "Berliner Gesellschaft für Integration mbH"
 		},
-		"address": ["Briesestraße 79", "12053 Berlin"],
+		"address": ["TODO hide Briesestraße 79", "12053 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "+49 30 68975904",
@@ -10674,7 +10733,7 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q107258950"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide ?"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -10722,7 +10781,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["German studies", "Scandinavian studies"]
 	},
 	"6052217071": {
 		"id": 6052217071,
@@ -10741,7 +10800,7 @@
 			"name": "Teilbibliothek im Institute for Advanced Sustainability Studies",
 			"opening_hours": "Mo-Th 09:00-17:00; PH off"
 		},
-		"address": ["Berliner Straße 130", "14467 Potsdam"],
+		"address": ["TODO hide Berliner Straße 130", "14467 Potsdam"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "+49 331 288 22331",
@@ -10770,7 +10829,7 @@
 			"name": "Teilbibliothek im Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung",
 			"opening_hours": "Tu-Th 10:00-16:00; PH off"
 		},
-		"address": ["Helmertweg A45S", "14473 Potsdam"],
+		"address": ["TODO hide Helmertweg A45S", "14473 Potsdam"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "+49 331 288 2121",
@@ -10796,7 +10855,7 @@
 			"opening_hours": "Mo-Th 09:00-16:30; Tu,Fr 09:00-15:45",
 			"ref:isil": "DE-B103"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "https://bib.telegrafenberg.de/",
 		"phone": "+49 331 288 2542",
@@ -10821,7 +10880,7 @@
 			"ref:isil": "DE-B103",
 			"wikidata": "Q28733495"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "https://bib.telegrafenberg.de/",
 		"phone": "+49 331 288 1673",
@@ -10844,14 +10903,14 @@
 			"website": "https://www.libelle-kinderland.de/",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
-		"phone": "TODO",
+		"address": ["Karl-Kunger-Straße 63", "12435 Berlin"],
+		"phone": "+493053600353",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Children's books", "Feminist literature"]
 	},
 	"6090016891": {
 		"id": 6090016891,
@@ -10869,7 +10928,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["Rudolf-Breitscheid-Straße 51", "14482 Potsdam"],
+		"address": ["TODO hide Rudolf-Breitscheid-Straße 51", "14482 Potsdam"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -10895,7 +10954,7 @@
 			"ref:isil": "DE-MUS-737613",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "https://www.potsdam-museum.de/",
 		"phone": "+49 331 289 6868",
 		"events": true,
@@ -10922,7 +10981,7 @@
 			"ref:isil": "DE-Po82",
 			"short_name": "ZZF"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "https://zzf-potsdam.de/de/bibliothek",
 		"phone": "+49 331 745 10132",
@@ -10941,7 +11000,7 @@
 			"amenity": "public_bookcase",
 			"check_date": "2024-01-17"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -10968,7 +11027,7 @@
 			"ref:isil": "DE-MUS-826411",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "+49 331 289 6707",
 		"events": true,
@@ -11023,14 +11082,15 @@
 			"wheelchair": "no"
 		},
 		"address": ["Residenzstraße 107", "13409 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Fr 15:00-20:00; Sa 12:00-18:00",
+		"website": "http://www.otaku-store.de/",
+		"phone": "+493043207161",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Manga"]
 	},
 	"6253979145": {
 		"id": 6253979145,
@@ -11042,7 +11102,7 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q108650606"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11068,7 +11128,7 @@
 			"public_bookcase:type": "phone_box",
 			"wheelchair": "limited"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -11086,7 +11146,7 @@
 			"amenity": "public_bookcase",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11109,7 +11169,7 @@
 			"man_made": "telephone_box",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11141,13 +11201,14 @@
 			"website": "https://www.math.tu-berlin.de/mfb/mfb/"
 		},
 		"address": ["Straße des 17. Juni 136", "10623 Berlin"],
+		"opening_hours": "Mo-Fr 10:00-18:00;",
 		"wheelchair": "TODO",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Mathematics"]
 	},
 	"6342056895": {
 		"id": 6342056895,
@@ -11162,11 +11223,11 @@
 			"opening_hours": "24/7",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
-		"name": "TODO",
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Pankower Allee 53", "13409 Berlin"],
+		"name": "Bücher Zelle",
+		"wheelchair": "no",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -11194,7 +11255,7 @@
 		},
 		"address": ["Bölschestraße 20", "12587 Berlin"],
 		"website": "http://www.buchhandlung-vielseitig.de/",
-		"phone": "TODO",
+		"phone": "+493065485315",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -11219,7 +11280,7 @@
 			"shop": "books",
 			"website": "https://www.agrar-boerse-ev.de/standorte-projekte/lichtenberg/bucherstube/"
 		},
-		"address": ["Warnitzer Straße 8", "13057 Berlin"],
+		"address": ["TODO hide check Warnitzer Straße 8", "13057 Berlin"],
 		"wheelchair": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -11237,7 +11298,7 @@
 			"amenity": "public_bookcase",
 			"wikidata": "Q108632185"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11257,7 +11318,7 @@
 			"amenity": "public_bookcase",
 			"wikidata": "Q108626470"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11277,16 +11338,17 @@
 			"name": "Hedayat",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Kantstraße 76", "10627 Berlin"],
+		"opening_hours": "Mo-Sa 11:00-21:00;",
+		"wheelchair": "no",
+		"website": "",
+		"phone": "+493043727976",
 		"events": true,
-		"coffee": false,
-		"languages": [],
+		"coffee": true,
+		"languages": ["Persian"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Persian"]
 	},
 	"6421375222": {
 		"id": 6421375222,
@@ -11304,7 +11366,7 @@
 			"wheelchair": "no",
 			"wikidata": "Q107302749"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -11351,10 +11413,10 @@
 		},
 		"address": ["Warschauer Straße 74", "10243 Berlin"],
 		"website": "https://www.shakespeareandsons.com/",
-		"phone": "TODO",
+		"phone": "",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -11376,9 +11438,10 @@
 			"shop": "books"
 		},
 		"address": ["Zimmermannstraße 26", "12163 Berlin"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"second_hand": "yes",
+		"wheelchair": "no",
+		"website": "https://berlinantiquariat.com/",
+		"phone": "+49307920520",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -11400,9 +11463,10 @@
 			"opening_hours": "Mo-Th 09:00-21:00; Fr 09:00-17:00"
 		},
 		"address": ["Heubnerweg 8-10", "14059 undefined"],
+		"opening_hours": "Mo-Fr 07:30-21:00;",
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "https://libraries.escp.eu/Default/berlin-campus.aspx",
+		"phone": "+ 49 3032007142",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -11428,9 +11492,9 @@
 			"shop": "books"
 		},
 		"address": ["Grußdorfstraße 18", "13507 Berlin"],
-		"wheelchair": "TODO",
+		"wheelchair": "limited",
 		"website": "https://www.tegeler-buecherstube.de/",
-		"phone": "TODO",
+		"phone": "+49304339503",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -11452,7 +11516,7 @@
 			"wheelchair": "limited",
 			"wikidata": "Q108632138"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -11481,7 +11545,7 @@
 			"shop": "books"
 		},
 		"address": ["Bizetstraße 113", "13088 Berlin"],
-		"wheelchair": "TODO",
+		"wheelchair": "no",
 		"website": "https://www.schnurundstaps.de/",
 		"phone": "+49 30 55065824",
 		"events": true,
@@ -11512,7 +11576,7 @@
 			"wheelchair": "yes",
 			"wikidata": "Q108649641"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -11541,8 +11605,9 @@
 			"wheelchair": "no"
 		},
 		"address": ["Danckelmannstraße 50", "14059 Berlin"],
+		"opening_hours": "Mo-WFr 12:00-18:00; Sa 10:00-14:00",
 		"website": "https://www.buchhandlung-godolt.de/",
-		"phone": "TODO",
+		"phone": "+493025058547",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -11558,7 +11623,7 @@
 			"amenity": "public_bookcase",
 			"check_date": "2023-06-19"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11589,14 +11654,14 @@
 			"wheelchair": "no"
 		},
 		"address": ["Holländerstraße 129", "13407 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Comics"]
 	},
 	"6720863485": {
 		"id": 6720863485,
@@ -11647,7 +11712,7 @@
 			"shop": "books",
 			"wheelchair": "designated"
 		},
-		"address": ["Hegelplatz 1", "10117 Berlin"],
+		"address": ["TODO hide closed Hegelplatz 1", "10117 Berlin"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -11670,7 +11735,7 @@
 			"name": "Thalia",
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -11690,7 +11755,7 @@
 			"check_date": "2023-11-28",
 			"operator": "Stadtteilinitiative Bornstedt e. V."
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11718,11 +11783,11 @@
 			"website": "https://www.odradekbuch.de/"
 		},
 		"address": ["Gustav-Müller-Straße 1", "10829 Berlin"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"wheelchair": "no",
+		"phone": "+493039722776",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -11745,10 +11810,10 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Friedrichstraße 176-179", "10117 Berlin"],
-		"name": "TODO",
+		"name": "Mnogoknig",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Russian"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -11766,7 +11831,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -11796,7 +11861,7 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Greifswalder Straße 167", "10409 Berlin"],
-		"website": "TODO",
+		"website": "",
 		"phone": "+49 30 42806255",
 		"events": true,
 		"coffee": false,
@@ -11824,6 +11889,7 @@
 			"wikidata": "Q28739236"
 		},
 		"address": ["Christinenstraße 18-19", "10119 Berlin"],
+		"opening_hours": "Mo, We 10:00-14:00; Tu 10:00-18:00;",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -11846,7 +11912,7 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q107259759"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "https://box.stutti.de",
 		"phone": "TODO",
@@ -11882,7 +11948,7 @@
 			"wikimedia_commons": "Category:Prussian Heritage Image Archive",
 			"wikipedia": "de:Bildagentur für Kunst, Kultur und Geschichte"
 		},
-		"address": ["Märkisches Ufer 16;18", "10179 Berlin"],
+		"address": ["TODO check Märkisches Ufer 16;18", "10179 Berlin"],
 		"wheelchair": "TODO",
 		"website": "https://www.bpk-bildagentur.de/",
 		"phone": "+49 30 27 87 92-0",
@@ -11914,8 +11980,10 @@
 			"wheelchair": "no"
 		},
 		"address": ["Bergmannstraße 20", "10961 Berlin"],
-		"website": "TODO",
-		"phone": "+49 30 69819185",
+		"opening_hours": "Mo-Fr 12:00-18:00; Sa 10:00-16:00",
+		"second_hand": "yes",
+		"website": "https://www.antiquariat-minx.de/",
+		"phone": "0151 41625288",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -11940,7 +12008,7 @@
 			"opening_hours": "Nov-Feb We-Sa 13:00-19:00; Mar-Oct off",
 			"shop": "books"
 		},
-		"address": ["Karl-Marx-Platz 17", "12043 Berlin"],
+		"address": ["TODO hide Karl-Marx-Platz 17", "12043 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -11958,7 +12026,7 @@
 		"raw": {
 			"amenity": "public_bookcase"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11978,7 +12046,7 @@
 			"amenity": "public_bookcase",
 			"check_date": "2022-05-01"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -12002,10 +12070,10 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q107261244"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Mierendorffpl. 7", "10589 Berlin"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12028,8 +12096,10 @@
 			"website": "https://www.rotes-antiquariat.de/"
 		},
 		"address": ["Knesebeckstraße 13-14", "10623 Berlin"],
+		"second_hand": "yes",
+		"opening_hours": "Th-Fr 12:00-19:00; Sa 12:00-16:00",
 		"wheelchair": "TODO",
-		"phone": "TODO",
+		"phone": "+493037591251",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12063,7 +12133,7 @@
 			"website": "https://www.thalia.de/shop/home/filialen/showDetails/5424/",
 			"wheelchair": "yes"
 		},
-		"address": ["Breite Straße 20", "13187 Berlin"],
+		"address": ["TODO hide Breite Straße 20", "13187 Berlin"],
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12092,7 +12162,7 @@
 			"operator:wikidata": "Q1407819",
 			"phone": "+49 30 2093-66 130"
 		},
-		"address": ["Johannisstraße 10", "10117 Berlin"],
+		"address": ["TODO hide closed Johannisstraße 10", "10117 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"events": true,
@@ -12121,9 +12191,11 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Lychener Straße 9", "10437 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
-		"events": true,
+		"second_hand": "yes",
+		"opening_hours": "Mo-Fr 14:00-18:00",
+		"website": "https://www.johann-nadelmann.de/",
+		"phone": "+49 3044356161",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -12153,6 +12225,7 @@
 			"wheelchair": "no"
 		},
 		"address": ["Senefelderstraße 13", "10437 Berlin"],
+		"second_hand": "yes",
 		"website": "https://www.kulturring.berlin/",
 		"phone": "+49 30 91203924",
 		"events": true,
@@ -12185,8 +12258,8 @@
 		},
 		"address": ["Stargarder Straße 67", "10437 Berlin"],
 		"website": "https://buchhandlung-moby-dick.de/",
-		"phone": "TODO",
-		"events": true,
+		"phone": "+493040045757",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -12203,7 +12276,7 @@
 			"public_bookcase:type": "phone_box",
 			"wheelchair": "limited"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -12224,11 +12297,11 @@
 			"opening_hours": "Mo-Sa 10:00-20:00",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
-		"events": true,
+		"address": ["Schnellerstraße 21", "12439 Berlin"],
+		"wheelchair": "yes",
+		"website": "http://www.kaim-bringts.de/",
+		"phone": "+49306312534",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -12243,7 +12316,7 @@
 			"amenity": "public_bookcase",
 			"check_date": "2023-06-20"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -12273,8 +12346,9 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Rüdesheimer Straße 2", "14197 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-14:00",
+		"website": "http://www.buchhandlung-mertiny.de/",
+		"phone": "+493067828310",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12294,10 +12368,10 @@
 			"operator": "BürgerGenossenschaft Südstern e.V.",
 			"public_bookcase:type": "wooden_cabinet"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Südstern", "10961 Berlin"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12315,7 +12389,7 @@
 			"public_bookcase:type": "phone_box",
 			"wheelchair": "limited"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -12336,7 +12410,7 @@
 			"name": "Alpha Buchhandlung",
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -12367,10 +12441,10 @@
 			"website": "https://shakespeareandcompany.de/"
 		},
 		"address": ["Ludwigkirchstraße 9a", "10719 Berlin"],
-		"wheelchair": "TODO",
-		"events": true,
+		"wheelchair": "no",
+		"events": false,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English", "French", "Greek", "Italian", "Latin", "Dutch", "Ukrainian", "Russian", "Spanish", "Turkish"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -12383,7 +12457,7 @@
 			"amenity": "public_bookcase",
 			"check_date": "2023-05-05"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -12413,8 +12487,10 @@
 			"website": "https://buch-im-speicher.jimdofree.com/"
 		},
 		"address": ["Detmolder Straße 48", "10713 Berlin"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"opening_hours": "by appointment (check website)",
+		"second_hand": "yes",
+		"wheelchair": "no",
+		"phone": "+493022412231",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12431,11 +12507,13 @@
 			"name": "Umbras Kuriositätenkabinett Berlin",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
+		"address": ["Graefestraße 18", "10967 Berlin"],
+		"opening_hours": "Mo-Fr 09:30-18:30",
+		"second_hand": "yes",
+		"wheelchair": "no",
+		"website": "",
 		"phone": "+49 30 6926781",
-		"events": true,
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -12464,7 +12542,7 @@
 			"shop": "books",
 			"wheelchair": "no"
 		},
-		"address": ["Charlottenstraße 28", "14467 Potsdam"],
+		"address": ["TODO hide Charlottenstraße 28", "14467 Potsdam"],
 		"website": "https://buchladen-sputnik.de/",
 		"phone": "+49 331 581 3679",
 		"events": true,
@@ -12485,10 +12563,11 @@
 			"name": "Antiquariat Matthias Drummer",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
+		"address": ["Wilmersdorfer Str. 10", "10585 Berlin"],
+		"second_hand": "yes",
+		"wheelchair": "no",
 		"website": "https://sportantiquariat.de/",
-		"phone": "TODO",
+		"phone": "+49306935683",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12505,7 +12584,7 @@
 			"name": "Kinder-Bücherbox",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -12526,7 +12605,7 @@
 			"public_bookcase:type": "sculpture",
 			"wikidata": "Q107260867"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -12549,7 +12628,7 @@
 			"name": "BücherBOXX",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -12574,10 +12653,10 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q107264699"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Sigmaringer Str. 6-116", "10713 Berlin"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12603,14 +12682,15 @@
 			"website": "http://www.buchhandlung-siebenpunkt.de/"
 		},
 		"address": ["Hildegardstraße 16a", "10715 Berlin"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Tu-Fr 10:00-18:30; Sa 10:00-16:00",
+		"wheelchair": "no",
+		"phone": "+493088622690",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Children's books", "Young adult"]
 	},
 	"7798570856": {
 		"id": 7798570856,
@@ -12620,16 +12700,17 @@
 			"amenity": "library",
 			"name": "Bibliothek der Jüdischen Gemeinde"
 		},
-		"address": ["TODO"],
+		"address": ["Fasanenstraße 79/80", "10623 Berlin"],
+		"opening_hours": "Mo-Th 11:00-13:00, 14:00-18:00",
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "http://www.jg-berlin.org/institutionen/kultur/bibliothek.html",
+		"phone": "+493088028277",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Judaism", "Jewish history", "Jewish culture"]
 	},
 	"7804549787": {
 		"id": 7804549787,
@@ -12649,9 +12730,10 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Pistoriusstraße 32", "13086 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
-		"events": true,
+		"second_hand": "yes",
+		"website": "https://berlinerlesesalon.wordpress.com/",
+		"phone": "+493053819789",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -12665,7 +12747,7 @@
 		"raw": {
 			"amenity": "public_bookcase"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -12687,7 +12769,7 @@
 			"location": "wall",
 			"public_bookcase:type": "wooden_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -12720,10 +12802,11 @@
 			"shop": "books"
 		},
 		"address": ["Prenzlauer Allee 225", "10405 Berlin"],
+		"second_hand": "yes",
 		"wheelchair": "TODO",
 		"website": "http://www.mogwa.de/",
 		"phone": "+49 30 44038565",
-		"events": true,
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -12742,10 +12825,10 @@
 			"operator": "Kiezoase Schöneberg",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Barbarossastraße 65", "10781 Berlin"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12761,7 +12844,7 @@
 			"amenity": "public_bookcase",
 			"wikidata": "Q108632244"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -12781,7 +12864,7 @@
 			"amenity": "public_bookcase",
 			"name": "Bücherboxx"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -12803,10 +12886,10 @@
 			"opening_hours": "08:00-18:00",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Hannemannstraße 46", "12347 Berlin"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12829,7 +12912,7 @@
 			"public_bookcase:type": "phone_box",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -12848,7 +12931,7 @@
 			"name": "Katholische öffentliche Bücherei",
 			"opening_hours": "\"Jeden 1. und 3. Sonntag im Monat von 9:30-12:30 Uhr geöffnet.\""
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -12870,7 +12953,7 @@
 			"opening_hours": "24/7",
 			"public_bookcase:type": "wooden_cabinet"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -12895,7 +12978,7 @@
 			"public_bookcase:type": "shelf",
 			"website": "https://www.asb-falkensee.de/familiencafe"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"phone": "TODO",
@@ -12926,7 +13009,7 @@
 			"start_date": "2020-01"
 		},
 		"address": ["Bahnhofstraße 8", "14612 Falkensee"],
-		"wheelchair": "TODO",
+		"wheelchair": "TODO hide",
 		"website": "https://www.kapitel-acht.de/",
 		"phone": "+49 3322 200408",
 		"events": true,
@@ -12957,7 +13040,7 @@
 			"wheelchair:description": "Fahrstuhl vorhanden"
 		},
 		"address": ["Neue Grottkauer Straße 5", "12619 Berlin"],
-		"phone": "TODO",
+		"phone": "+49305636705",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -12984,7 +13067,7 @@
 			"website": "https://www.genialokal.de/buchhandlung/potsdam/viktoriagarten-potsdam/",
 			"wheelchair": "no"
 		},
-		"address": ["Geschwister-Scholl-Straße 10", "14471 Potsdam"],
+		"address": ["TODO hide Geschwister-Scholl-Straße 10", "14471 Potsdam"],
 		"phone": "TODO",
 		"events": true,
 		"coffee": false,
@@ -13008,7 +13091,7 @@
 			"wikidata": "Q107301591",
 			"wikimedia_commons": "File:Bücherbox Brunnenviertel Berlin-Gesundbrunnen.jpg"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13030,7 +13113,7 @@
 			"shop": "books"
 		},
 		"address": ["Friedrichstraße 57", "undefined undefined"],
-		"wheelchair": "TODO",
+		"wheelchair": "TODO hide",
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -13053,7 +13136,7 @@
 			"start_date": "2015-06-01",
 			"website": "https://www.ev-mittendrin.de/kindercafe/buecherzelle/"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -13071,7 +13154,7 @@
 			"amenity": "public_bookcase",
 			"public_bookcase:type": "reading_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -13096,15 +13179,16 @@
 			"shop": "books",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Baruther Str. 10", "10961 Berlin"],
+		"second_hand": "yes",
+		"website": "http://www.comic-base-berlin.de/",
+		"phone": "+49306943855",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Comics"]
 	},
 	"8435515108": {
 		"id": 8435515108,
@@ -13122,9 +13206,10 @@
 			"name": "Stadtteilbibliothek Heerstraße"
 		},
 		"address": ["Obstallee 22F", "13593 Berlin"],
-		"wheelchair": "TODO",
+		"opening_hours": "Mo,Th 12:00-19:00; Tu,We,Fr 12:00-19:00;",
+		"wheelchair": "yes",
 		"website": "https://www.berlin.de/stadtbibliothek-spandau/bibliotheken/heerstrasse/stadtteilbibliothek-heerstrasse-182099.php",
-		"phone": "TODO",
+		"phone": "+49303631091",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13148,7 +13233,7 @@
 			"name": "Thalia",
 			"shop": "books"
 		},
-		"address": ["Prerower Platz 1", "13051 Berlin"],
+		"address": ["TODO hide Prerower Platz 1", "13051 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13169,10 +13254,10 @@
 			"name": "Bücherbox Kaskelkiez",
 			"public_bookcase:type": "metal_cabinet"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Tuchollapl. 6", "10317 Berlin"],
+		"wheelchair": "yes",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13198,7 +13283,7 @@
 			"operator": "Kuno15",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["Kuno-Fischer-Straße 15", "14057 Berlin"],
+		"address": ["TODO hide Kuno-Fischer-Straße 15", "14057 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13227,12 +13312,13 @@
 			"shop": "books"
 		},
 		"address": ["Bergmannstraße 59", "10961 Berlin"],
-		"wheelchair": "TODO",
+		"opening_hours": "Mo 13:00-19:30; Tu-Fr 10:00-18:00; Sa 12:00-17:00 || Su \"je nach Veranstaltung\"",
+		"wheelchair": "no",
 		"website": "https://andenbuch.de/",
-		"phone": "TODO",
+		"phone": "01702734512",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Spanish"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -13246,7 +13332,7 @@
 			"name": "Bücherboxxl",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13273,8 +13359,8 @@
 			"website": "http://www.buchhandlungbornberlin.de/"
 		},
 		"address": ["Ladenstraße 17/18", "14169 Berlin"],
-		"wheelchair": "TODO",
-		"events": true,
+		"wheelchair": "yes",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -13300,13 +13386,13 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Innsbrucker Straße 3", "10825 Berlin"],
-		"phone": "TODO",
+		"phone": "+4930 854 57 44",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Chinese"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["China"]
 	},
 	"8639377473": {
 		"id": 8639377473,
@@ -13320,7 +13406,7 @@
 			"start_date": "2015-08",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13344,10 +13430,10 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q107259709"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Seelingstraße 20", "14059 Berlin"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13372,12 +13458,12 @@
 			"shop": "books"
 		},
 		"address": ["Adolf-Grimme-Ring 12", "14532 Kleinmachnow"],
-		"wheelchair": "TODO",
+		"wheelchair": "no",
 		"website": "https://natura.buchhandlung.de/",
 		"phone": "+49 33203 78491",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English", "Spanish", "French", "Italian", "Dutch", "Polish", "Russian", "Turkish", "Ukrainian"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -13405,9 +13491,9 @@
 			"website": "https://www.buechertisch.de",
 			"wheelchair": "yes"
 		},
-		"address": ["Alfred-Scholz-Platz undefined", "12043 Berlin"],
-		"name": "TODO",
-		"phone": "TODO",
+		"address": ["Alfred-Scholz-Platz ", "12043 Berlin"],
+		"name": "Public bookcase",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13431,11 +13517,11 @@
 			"wheelchair": "yes"
 		},
 		"address": ["Wörther Straße 16", "10405 Berlin"],
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "http://www.georgbuechnerbuchladen.berlin/",
+		"phone": "+49304421301",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -13452,10 +13538,10 @@
 			"operator": "Bücherboxx",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Gierkepl. 1", "10585 Berlin"],
+		"wheelchair": "",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13476,8 +13562,8 @@
 			"shop": "books",
 			"website": "https://www.wayne-isley.de/"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
+		"address": ["Pestalozzistraße 66", "10627 Berlin"],
+		"wheelchair": "no",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13496,13 +13582,14 @@
 			"second_hand": "only",
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Mariannenstraße 50", "10997 Berlin"],
+		"second_hand": "yes",
+		"wheelchair": "no",
+		"website": "",
+		"phone": "01797778875",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -13522,7 +13609,7 @@
 			"public_bookcase:type": "phone_box",
 			"wikidata": "Q108690895"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13549,7 +13636,7 @@
 			"name": "Hugendubel",
 			"shop": "books"
 		},
-		"address": ["Karl-Marx-Straße 66", "12043 Berlin"],
+		"address": ["TODO hide Karl-Marx-Straße 66", "12043 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13571,7 +13658,7 @@
 			"opening_hours": "24/7",
 			"public_bookcase:type": "wooden_cabinet"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -13603,8 +13690,9 @@
 			"opening_hours": "Mo, Fr 11:00-15:00; Tu-Th 13:00-19:00"
 		},
 		"address": ["Bat-Yam-Platz 1", "12353 Berlin"],
-		"wheelchair": "TODO",
-		"website": "https://www.gropiusstadt-berlin.de/einrichtungen-projekte/stadtteilbibliothek-im-gemeinschaftshaus",
+		"opening_hours": "Mo,Tu,Fr 13:00-19:00; Th 10:00-16:00",
+		"wheelchair": "yes",
+		"website": "https://www.berlin.de/stadtbibliothek-neukoelln/bibliotheken/gertrud-junge-bibliothek/",
 		"phone": "+49 30 902391494",
 		"events": true,
 		"coffee": false,
@@ -13623,7 +13711,7 @@
 			"public_bookcase:type": "phone_box",
 			"wheelchair": "limited"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13642,11 +13730,11 @@
 			"amenity": "public_bookcase",
 			"wikidata": "Q108626582"
 		},
-		"address": ["TODO"],
-		"name": "TODO",
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Wernshauser Str. 16", "12249 Berlin"],
+		"name": "Bücherbox",
+		"wheelchair": "yes",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13663,10 +13751,10 @@
 			"name": "Leseglück Lankwitz",
 			"wikidata": "Q108626661"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Blankenhainer Str. 4", "12249 Berlin"],
+		"wheelchair": "yes",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13682,7 +13770,7 @@
 			"amenity": "public_bookcase",
 			"wikidata": "Q108631599"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -13703,7 +13791,7 @@
 			"wikidata": "Q108632333",
 			"wikimedia_commons": "File:Offener Bücherschrank Ahrensfelde.jpg"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -13723,7 +13811,7 @@
 			"amenity": "public_bookcase",
 			"wikidata": "Q108649985"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -13746,7 +13834,7 @@
 			"man_made": "telephone_box",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -13769,7 +13857,7 @@
 			"public_bookcase:type": "wooden_cabinet",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -13792,9 +13880,9 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Heinsestraße 25", "13467 Berlin"],
+		"website": "http://buchhandlung-fellbacherplatz.de/",
+		"phone": "+493040009178",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13813,7 +13901,7 @@
 			"name": "Bücher-Luise",
 			"nobrand": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13837,7 +13925,7 @@
 			"public_bookcase:type": "reading_box",
 			"wheelchair": "limited"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -13856,7 +13944,7 @@
 			"amenity": "public_bookcase",
 			"name": "Bücherfisch"
 		},
-		"address": ["Sennefelder Straße undefined", "undefined undefined"],
+		"address": ["TODO hide Sennefelder Straße undefined", "undefined undefined"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13883,14 +13971,15 @@
 			"website": "https://www.landkartenschropp.de"
 		},
 		"address": ["Knesebeckstraße 21", "10623 Berlin"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Fr 11:00-19:00; Sa 10:00-18:00",
+		"wheelchair": "no",
+		"phone": "+493023557320",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Maps", "Travel guides", "Travel reports", "Globes", "Atlases"]
 	},
 	"9347421347": {
 		"id": 9347421347,
@@ -13915,6 +14004,7 @@
 		},
 		"address": ["Alt-Rudow 45", "12357 Berlin"],
 		"website": "https://www.berlin.de/stadtbibliothek-neukoelln/bibliotheken/gertrud-hass-bibliothek/",
+		"opening_hours": "Mo,We,Fr 11:00-15:00; Tu,Th 13:00-18:00; Sa,Su,PH off",
 		"phone": "+49 30 902391940",
 		"events": true,
 		"coffee": false,
@@ -13945,7 +14035,7 @@
 			"website": "https://www.a-p.berlin/",
 			"wheelchair": "yes"
 		},
-		"address": ["Lindower Straße 20", "13347 Berlin"],
+		"address": ["TODO hide closed Lindower Straße 20", "13347 Berlin"],
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -13968,7 +14058,7 @@
 			"name": "Matthias Severin Antiquariat",
 			"shop": "books"
 		},
-		"address": ["Meraner Straße 6", "10825 Berlin"],
+		"address": ["TODO hide temp closed Meraner Straße 6", "10825 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -13998,13 +14088,13 @@
 			"wheelchair": "no"
 		},
 		"address": ["Apostel-Paulus-Straße 5", "10823 Berlin"],
-		"phone": "TODO",
+		"phone": "+493078892929",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Children's books", "Young adult"]
 	},
 	"9429552773": {
 		"id": 9429552773,
@@ -14016,10 +14106,10 @@
 			"opening_hours": "Mo-Su 09:00-19:00",
 			"public_bookcase:type": "metal_cabinet"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Waldsassener Str.", "12279 Berlin"],
+		"wheelchair": "yes",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14039,10 +14129,10 @@
 			"name": "Bücherbox Tilkeroder Weg",
 			"public_bookcase:type": "reading_box"
 		},
-		"address": ["Tilkeroder Weg 28", "undefined Berlin"],
+		"address": ["Tilkeroder Weg 28", "12277 Berlin"],
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14062,7 +14152,7 @@
 			"opening_hours": "24/7",
 			"public_bookcase:type": "shelf"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14086,7 +14176,7 @@
 			"opening_hours": "Mo 13:00-18:00; Tu 10:00-14:00; Fr 10:00-14:00",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "https://www.nuthetal.de/verzeichnis/visitenkarte.php?mandat=3854",
 		"phone": "TODO",
 		"events": true,
@@ -14127,8 +14217,8 @@
 		"website": "https://www.shesaid.de/",
 		"phone": "+49 30 27999955",
 		"events": true,
-		"coffee": false,
-		"languages": [],
+		"coffee": true,
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -14140,7 +14230,7 @@
 		"raw": {
 			"amenity": "public_bookcase"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14163,7 +14253,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -14187,7 +14277,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["Schultheiß Quartier undefined", "undefined undefined"],
+		"address": ["TODO hide Schultheiß Quartier undefined", "undefined undefined"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -14209,7 +14299,7 @@
 			"name": "Offener Bücherschrank",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "https://www.kulturhausbabelsberg.de/",
 		"phone": "TODO",
@@ -14231,12 +14321,13 @@
 			"shop": "books",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Pfalzburger Str. 69", "10719 Berlin"],
+		"opening_hours": "Mo-Fr 13:00-18:00",
+		"website": "http://www.palmartpress.com/",
+		"phone": "+493086390429",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -14249,7 +14340,7 @@
 			"name": "Altlandsberger Buchhandlung & Antiquariat",
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -14267,12 +14358,14 @@
 		"raw": {
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"name": "TODO",
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
-		"events": true,
+		"address": ["Hobrechtstraße 14", "12047 Berlin"],
+		"opening_hours": "Mo-Fr 11:00-18:00; Sa 11:00-14:00",
+		"second_hand": "yes",
+		"name": "Antiquariat Am Herrmannplatz",
+		"wheelchair": "no",
+		"website": "",
+		"phone": "+493062986560",
+		"events": false,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
@@ -14297,10 +14390,10 @@
 		"address": ["Mariannenplatz 2B", "10997 Berlin"],
 		"wheelchair": "TODO",
 		"website": "https://kollektivbibliothek.noblogs.org/",
-		"phone": "TODO",
+		"phone": "",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English", "Spanish"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -14312,11 +14405,11 @@
 		"raw": {
 			"amenity": "public_bookcase"
 		},
-		"address": ["TODO"],
-		"name": "TODO",
+		"address": ["Tietzstraße 44", "13509 Berlin"],
+		"name": "Bücherbox",
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14337,7 +14430,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -14354,7 +14447,7 @@
 		"raw": {
 			"amenity": "public_bookcase"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14383,7 +14476,7 @@
 			"opening_hours": "We-Fr 11:00-18:00; Sa 10:00-15:00",
 			"shop": "books"
 		},
-		"address": ["Prenzlauer Allee 23", "10405 Berlin"],
+		"address": ["TODO hide closed Prenzlauer Allee 23", "10405 Berlin"],
 		"wheelchair": "TODO",
 		"website": "http://schneefeld-und-hund.de/",
 		"phone": "+49 30 77325205",
@@ -14413,13 +14506,13 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Wörther Straße 17", "10405 Berlin"],
-		"phone": "TODO",
+		"phone": "+493047374722",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Art", "Photography", "Typography", "Design", "Interior design", "Theater", "Music", "Film"]
 	},
 	"9992784496": {
 		"id": 9992784496,
@@ -14439,7 +14532,7 @@
 			"shop": "books",
 			"wheelchair": "no"
 		},
-		"address": ["Wörther Straße 27", "10405 Berlin"],
+		"address": ["TODO hide gift shop Wörther Straße 27", "10405 Berlin"],
 		"website": "http://hortus-conclusus.berlin/",
 		"phone": "TODO",
 		"events": true,
@@ -14458,7 +14551,7 @@
 			"name": "Bücherbox",
 			"not:brand:wikidata": "Q107301591"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -14477,7 +14570,7 @@
 			"name": "Karten Schropp",
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide repeated"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -14508,7 +14601,9 @@
 			"wheelchair": "no"
 		},
 		"address": ["Marienburger Straße 9", "10405 Berlin"],
-		"website": "TODO",
+		"opening_hours": "Tu-Fr 12:00-16:00",
+		"second_hand": "yes",
+		"website": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14530,15 +14625,16 @@
 			"shop": "books"
 		},
 		"address": ["Senefelderstraße 34", "10437 Berlin"],
+		"opening_hours": "Mo-Fr 09:00-17:00",
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "https://tulipan-verlag.de/verlag/tulipan-berlin/",
+		"phone": " 089 33035400",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Children's book"]
 	},
 	"10130653475": {
 		"id": 10130653475,
@@ -14553,7 +14649,7 @@
 			"description": "Bibliothek im Gemeindezentrum",
 			"opening_hours": "Do 16:00 - 18:00"
 		},
-		"address": ["Dr.-Albert-Schweitzer-Straße 9", "14552 Michendorf"],
+		"address": ["TODO hide Dr.-Albert-Schweitzer-Straße 9", "14552 Michendorf"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14579,8 +14675,9 @@
 			"phone": "+493031422414"
 		},
 		"address": ["Straße des 17. Juni 152", "10623 undefined"],
+		"opening_hours": "Mo-Fr 10:00-20:00",
 		"wheelchair": "TODO",
-		"website": "TODO",
+		"website": "https://www.tu.berlin/ub/ueber-uns/standorte/bereichsbibliothek-architektur-und-kunstwissenschaft",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14603,12 +14700,13 @@
 			"wheelchair": "no"
 		},
 		"address": ["Sonntagstraße 26", "undefined undefined"],
+		"opening_hours": "Tu-Fr 12:00-19:00; Sa 12:00-18:00",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English", "French"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["African literature", "Afrodiasporic literature"]
 	},
 	"10210239479": {
 		"id": 10210239479,
@@ -14625,8 +14723,9 @@
 			"website": "http://www.biobib.info"
 		},
 		"address": ["Richardstraße 104", "12043 Berlin"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo,Tu,Th,Fr 15:00-19:00;",
+		"wheelchair": "no",
+		"phone": "+4930 680 59 387",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14641,7 +14740,7 @@
 		"raw": {
 			"amenity": "public_bookcase"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14663,9 +14762,9 @@
 			"shop": "books",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Meierottostraße 1 am, Fasanenpl.", "10719 Berlin"],
+		"website": "http://www.bookinista.de/",
+		"phone": "+493033907244",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14681,11 +14780,11 @@
 			"amenity": "public_bookcase",
 			"public_bookcase:type": "wooden_cabinet"
 		},
-		"address": ["TODO"],
-		"name": "TODO",
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Jeverstraße 9, 12157 Berlin"],
+		"name": "Public bookcase",
+		"wheelchair": "yes",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14706,9 +14805,10 @@
 			"public_bookcase:type": "wooden_cabinet",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Alt-Blankenburg 16", "13129 Berlin"],
+		"name":"Standort Blankenburger Bücherbox",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14731,9 +14831,9 @@
 			"type": "phone_box",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Stienitzseestraße 20", "12489 Berlin"],
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14752,7 +14852,7 @@
 			"public_bookcase:type": "shelter",
 			"wikidata": "Q116294565"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -14777,10 +14877,11 @@
 			"wheelchair": "no"
 		},
 		"address": ["Linienstraße 114", "undefined undefined"],
-		"website": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Sa 11:00-19:00",
+		"website": "http://www.about-bookshop.de/",
+		"phone": "+493041199647",
 		"events": true,
-		"coffee": false,
+		"coffee": true,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
@@ -14806,10 +14907,10 @@
 		"wheelchair": "TODO",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["French"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Comics", "Manga"]
 	},
 	"10719032095": {
 		"id": 10719032095,
@@ -14830,12 +14931,13 @@
 			"shop": "books"
 		},
 		"address": ["Lausitzer Platz 17", "10997 Berlin"],
-		"wheelchair": "TODO",
+		"second_hand": "yes",
+		"wheelchair": "no",
 		"website": "https://curiousfoxbooks.com/",
 		"phone": "+49 30 25093220",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -14854,12 +14956,13 @@
 			"shop": "books"
 		},
 		"address": ["Kurfürstenstraße 14", "10785 undefined"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Tu-Sa 13:00-19:00;",
+		"wheelchair": "limited",
+		"website": "https://www.instagram.com/hopscotchreadingroom/",
+		"phone": "+493094850062",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -14875,7 +14978,7 @@
 			"opening_hours": "24/7",
 			"public_bookcase:type": "phone_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14894,7 +14997,7 @@
 		"raw": {
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14913,7 +15016,7 @@
 		"raw": {
 			"amenity": "public_bookcase"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14935,7 +15038,7 @@
 			"operator": "Kiezclub Vital",
 			"public_bookcase:type": "shelf"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14956,11 +15059,11 @@
 			"description": "Bücherschrank in Buchform mit drei Regalfächern von ca. 70 cm Länge",
 			"public_bookcase:type": "sculpture"
 		},
-		"address": ["TODO"],
-		"name": "TODO",
+		"address": ["Mahlsdorfer Str. 52", "12555 Berlin"],
+		"name": "Öffentlicher Bücherschrank",
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -14976,7 +15079,7 @@
 			"amenity": "public_bookcase",
 			"fixme": "position estimated, should exist before the pottery shop"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -14998,7 +15101,7 @@
 			"brand:wikidata": "Q107301591",
 			"name": "Bücherbox"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -15021,7 +15124,7 @@
 			"operator": "Stadt Hohen Neuendorf",
 			"website": "https://bibliothek.hohen-neuendorf.de/"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -15041,7 +15144,7 @@
 			"colour": "red",
 			"man_made": "telephone_box"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -15061,7 +15164,7 @@
 			"amenity": "public_bookcase",
 			"public_bookcase:type": "wooden_cabinet"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -15089,7 +15192,7 @@
 			"shop": "books",
 			"website": "https://www.argument-buchhandlung.de/"
 		},
-		"address": ["Mohriner Allee 64", "12347 Berlin"],
+		"address": ["TODO hide closed Mohriner Allee 64", "12347 Berlin"],
 		"wheelchair": "TODO",
 		"events": true,
 		"coffee": false,
@@ -15107,9 +15210,11 @@
 			"shop": "books",
 			"website": "https://ivallansbooks.com/"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"address": ["Schönleinstraße 32","10967 Berlin"],
+		"second_hand": "yes",
+		"opening_hours": "Mo-Sa 12:00-20:00;",
+		"wheelchair": "no",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15125,7 +15230,7 @@
 			"amenity": "public_bookcase",
 			"indoor": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -15147,7 +15252,7 @@
 			"brand:wikidata": "Q107301591",
 			"name": "Bücherbox"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -15168,11 +15273,11 @@
 			"nobrand": "yes",
 			"noname": "yes"
 		},
-		"address": ["TODO"],
-		"name": "TODO",
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Zikadenweg 60", "14055 Berlin"],
+		"name": "Open bookcase",
+		"wheelchair": "yes",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15188,7 +15293,7 @@
 			"amenity": "public_bookcase",
 			"name": "Projekthaus Potsdam"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -15207,7 +15312,7 @@
 			"name": "WHSmith",
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -15225,7 +15330,7 @@
 		"raw": {
 			"amenity": "public_bookcase"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -15247,10 +15352,10 @@
 			"name": "Bücher",
 			"public_bookcase:type": "glass_cabinet"
 		},
-		"address": ["TODO"],
+		"address": ["Winklerstraße 60", "12623 Berlin"],
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15276,7 +15381,7 @@
 			"name": "Moabiter Bücherbank",
 			"start_date": "2023-07-12"
 		},
-		"address": ["Arminiusstraße 2-4", "10551 Berlin"],
+		"address": ["TODO hide Arminiusstraße 2-4", "10551 Berlin"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -15298,12 +15403,13 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Knesebeckstraße 11", "10623 Berlin"],
+		"opening_hours": "Mo-Fr 10:00-19:00; Sa 11:00-18:00",
+		"website": "http://www.knesebeck11.de/",
+		"phone": "+493023888119",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English", "French", "Greek", "Italian", "Latin", "Dutch", "Polish", "Ukrainian", "Russian", "Spanish", "Turkish"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -15319,7 +15425,7 @@
 			"public_bookcase:type": "phone_box",
 			"website": "https://www.buecherboxx.com"
 		},
-		"address": ["TODO"],
+		"address": ["TODO check"],
 		"wheelchair": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -15346,12 +15452,13 @@
 			"shop": "books"
 		},
 		"address": ["Bernauer Straße 49", "10435 Berlin"],
+		"opening_hours": "Tu-Fr 11:00-19:00; Sa 11:00-17:00; Su,Mo off",
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "https://babelbooksberlin.com/",
+		"phone": "017621369545",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Russian"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -15363,7 +15470,7 @@
 		"raw": {
 			"amenity": "public_bookcase"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -15386,8 +15493,8 @@
 			"website": "https://coloramabooks.space",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
-		"phone": "TODO",
+		"address": ["Drontheimer Straße 6", "13359 Berlin"],
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15405,10 +15512,11 @@
 			"name": "Bereichsbibliothek Physik",
 			"ref:isil": "DE-83-1022"
 		},
-		"address": ["TODO"],
+		"address": ["Hardenbergstraße 36", "10623 Berlin"],
+		"opening_hours": "Tu-Th 11:00-19:00; Fr,Sa 11:00-18:00; Su,Mo off",
 		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"website": "https://www.tu.berlin/ub/ueber-uns/standorte/bereichsbibliothek-physik/",
+		"phone": "+493031422675",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15432,7 +15540,7 @@
 			"opening_hours": "Mo 10:00-12:00,13:00-17:00, Tu-Su off",
 			"wheelchair": "yes"
 		},
-		"address": ["Goethestraße 1", "16540 Hohen Neuendorf"],
+		"address": ["TODO hide Goethestraße 1", "16540 Hohen Neuendorf"],
 		"name": "TODO",
 		"website": "https://cloudopac.winbiap.de/hohenneuendorf/index.aspx?data=cGFnZUlkPTUz",
 		"phone": "TODO",
@@ -15453,10 +15561,10 @@
 			"brand:wikidata": "Q107266562",
 			"name": "Bücherzelle"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Paul-Zobel-Straße", "10367 Berlin"],
+		"wheelchair": "yes",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15476,10 +15584,10 @@
 			"opening_hours": "Mo-Su 11:00-18:00",
 			"shop": "books"
 		},
-		"address": ["Pappelallee 25", "10437 undefined"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Pappelallee 25", "10437 Berlin"],
+		"wheelchair": "limited",
+		"website": "http://www.buchhandlungmontag.berlin/",
+		"phone": "+493089650712",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15494,17 +15602,17 @@
 		"raw": {
 			"shop": "books"
 		},
-		"address": ["TODO"],
-		"name": "TODO",
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Florastraße 61", "13187 Berlin"],
+		"name": "einBuch.haus",
+		"wheelchair": "no",
+		"website": "https://einbuch.haus/",
+		"phone": "+493030361777",
 		"events": true,
 		"coffee": false,
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Artist's books"]
 	},
 	"11446515471": {
 		"id": 11446515471,
@@ -15521,7 +15629,7 @@
 			"opening_hours": "Mo-Fr 09:30-13:00",
 			"website": "https://sgym.de/schulorganisation/schulbibliothek/"
 		},
-		"address": ["Schillerstraße 125", "10625 undefined"],
+		"address": ["TODO hide Schillerstraße 125", "10625 undefined"],
 		"wheelchair": "TODO",
 		"phone": "TODO",
 		"events": true,
@@ -15547,8 +15655,9 @@
 			"website": "https://ferlemannundschatzer.de/"
 		},
 		"address": ["Güntzelstraße 45", "10717 Berlin"],
-		"wheelchair": "TODO",
-		"phone": "TODO",
+		"opening_hours": "Mo-Fr 09:00-19:00; Sa 09:00-16:00",
+		"wheelchair": "no",
+		"phone": "+493086396067",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15567,7 +15676,7 @@
 			"name": "Thalia",
 			"shop": "books"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"wheelchair": "TODO",
 		"website": "TODO",
 		"phone": "TODO",
@@ -15597,6 +15706,7 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Hauptstraße 20", "13158 Berlin"],
+		"second_hand": "yes",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15614,9 +15724,10 @@
 			"shop": "books",
 			"wheelchair": "no"
 		},
-		"address": ["TODO"],
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Germaniapromenade 19", "12347 Berlin"],
+		"opening_hours": "Mo-Th 09:00-15:00; Fr 09:00-14:00",
+		"website": "https://www.sjb-netzwerk.de/?p=575",
+		"phone": "+493023911139",
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -15632,10 +15743,10 @@
 			"amenity": "public_bookcase",
 			"name": "Kinderbücherbox"
 		},
-		"address": ["TODO"],
-		"wheelchair": "TODO",
-		"website": "TODO",
-		"phone": "TODO",
+		"address": ["Fischerinsel 8", "10179 Berlin"],
+		"wheelchair": "no",
+		"website": "",
+		"phone": "",
 		"events": true,
 		"coffee": false,
 		"languages": [],
