@@ -198,13 +198,13 @@ export default {
           <TagButton @click="toggleFilter" label=""/>
           <TagButton @click="toggleFilter" label=""/>
           <TagButton @click="toggleFilter" label=""/>
-          <TagButton @click="showResults" label="Go to results" v-if="showControls"/>
+          <TagButton id="goToResults" @click="showResults" label="Go to results" v-if="showControls"/>
         </div>
         </div>
       </div>
 
       <div id="bottom">
-        <div id="results" v-if="!showControls">
+        <div id="results">
           <ListEntry v-for="p in points" :data="p" ref="items"
               @click="zoomToPoint(p)"
               :open="p.id == this.highlighted"
@@ -385,6 +385,10 @@ html, body {
   display: none;
 }
 
+#goToResults {
+  display: none;
+}
+
 select, .tag {
   background-color: var(--bg-color);
   color: var(--main-text-color);
@@ -513,6 +517,10 @@ select {
     display: flex;
     flex-flow: wrap;
     max-width: -webkit-fill-available;
+  }
+
+  #goToResults {
+    display: block;
   }
 
   #bottom {
