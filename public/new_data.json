@@ -1042,7 +1042,7 @@
 			"website": "http://www.thalia.de",
 			"wheelchair": "yes"
 		},
-		"address": ["Bahnhofstraße 33-38", "12555 Berlin"],
+		"address": ["TODO hide Bahnhofstraße 33-38", "12555 Berlin"],
 		"events": true,
 		"coffee": false,
 		"languages": [],
@@ -3041,7 +3041,7 @@
 			"shop": "books",
 			"wheelchair": "yes"
 		},
-		"address": ["Am Borsigturm 2", "13507 Berlin"],
+		"address": ["TODO hide Am Borsigturm 2", "13507 Berlin"],
 		"website": "https://www.thalia.de/buchhandlung/5841?utm_source=google&utm_medium=gmb&utm_campaign=website&utm_content=berlin",
 		"events": false,
 		"coffee": false,
@@ -3538,7 +3538,7 @@
 			"website": "https://www.thalia.de/shop/home/filialen/showDetails/5848/",
 			"wheelchair": "yes"
 		},
-		"address": ["Schloßstraße 33-36", "12163 Berlin"],
+		"address": ["TODO hide Schloßstraße 33-36", "12163 Berlin"],
 		"phone": "+49 30 70096180",
 		"events": false,
 		"coffee": false,
@@ -4485,7 +4485,7 @@
 			"source": "memory",
 			"wheelchair": "yes"
 		},
-		"address": ["TODO"],
+		"address": ["TODO hide"],
 		"website": "TODO",
 		"phone": "TODO",
 		"events": true,

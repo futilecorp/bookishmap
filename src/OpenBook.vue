@@ -31,8 +31,8 @@ export default {
       zoom: 12,
       circleMarkerStyle:{
         radius: 8,
-        fillColor: "#CA4023",
-        color: "#000",
+        fillColor: "#DA9239",
+        color: "#162C74",
         weight: 1,
         opacity: 1,
         fillOpacity: 1
@@ -42,7 +42,8 @@ export default {
         // https://leafletjs.com/reference.html#tooltip-option
         direction: 'top',
         className: 'maptooltip', // style by adding a CSS definition
-      }
+      },
+      showControls: true
     };
   },
   computed: {
@@ -59,7 +60,7 @@ export default {
   },
   methods: {
     getPoints() {
-      fetch('/data.json')
+      fetch('/new_data.json')
         .then(response => response.json())
         .then(data => {
             this.allPoints = Object.values(data).map((el) => {
@@ -126,6 +127,14 @@ export default {
       // is a bit weird, but maybe the highlight of just the selected bookstore
       // would solve 
     },
+    toggleFilterMobile() {
+      //this is for showing the filtering on mobile
+      this.showControls = ! this.showControls;
+    },
+    showResults() {
+      //this is for showing the filtering on mobile
+      this.showControls = ! this.showControls;
+    }
   }
 };
 </script>
@@ -146,7 +155,11 @@ export default {
             <div id="filterTitle">Filter by:</div>
             <TagButton @click="clearFilter" label="clear all" />
           </div>
-          <div id="controls">
+          <div id="filteringMobile"> 
+            <div id="filterTitleMobile" @click="toggleFilterMobile" label="filter">Filter by:</div>
+            <TagButton @click="clearFilter" label="clear all" />
+          </div>
+          <div id="controls" v-if="showControls">
           <!-- changing the selection applies a filter that field 'name' needs to have value 'value' -->
           <select name="type" @change="toggleSelect($event)" id="type-select" :class="{active: this.isActiveFilter('type')}">
             <option value="">TYPE</option>
@@ -185,12 +198,13 @@ export default {
           <TagButton @click="toggleFilter" label=""/>
           <TagButton @click="toggleFilter" label=""/>
           <TagButton @click="toggleFilter" label=""/>
+          <TagButton @click="showResults" label="Go to results" v-if="showControls"/>
         </div>
         </div>
       </div>
 
       <div id="bottom">
-        <div id="results">
+        <div id="results" v-if="!showControls">
           <ListEntry v-for="p in points" :data="p" ref="items"
               @click="zoomToPoint(p)"
               :open="p.id == this.highlighted"
@@ -280,8 +294,8 @@ redpink: #C77170
 }
 
 :root {
-  --main-text-color: #04295F;
-  --bg-color: #CACE9F;
+  --main-text-color: #162C74;
+  --bg-color: #DBA562;
   --hl-color: #CA4023;
 }
 
@@ -297,10 +311,13 @@ html, body {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+  padding: 8px;
 }
 
 #top {
 	display: flex;
+  border-bottom: 1px solid var(--main-text-color);
+  border-right: 1px solid var(--main-text-color);
 }
 
 #title {
@@ -311,6 +328,9 @@ html, body {
   width: 500px;
   align-items: center;
   justify-content: center;
+  border-right: 1px solid var(--main-text-color);
+  border-top: 2px solid var(--main-text-color);
+  border-left: 2px solid var(--main-text-color);
 }
 
 #title p{
@@ -336,12 +356,18 @@ html, body {
 
 #filtering {
   display: flex;
+  border-top: 1px solid var(--main-text-color);
+}
+
+#filteringMobile {
+  display: none;
 }
 
 #filterTitle {
   text-transform: uppercase;
+  background-color: var(--bg-color);
   color: var(--main-text-color);
-  border-left: 1px solid var(--main-text-color);
+  border: 1px solid var(--main-text-color);
   flex-grow: 10;
   padding: 4px 32px 32px 4px;
 }
@@ -355,11 +381,22 @@ html, body {
 	max-width: -webkit-fill-available;
 }
 
+#controlsMobile {
+  display: none;
+}
+
+select, .tag {
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  border: 1px solid var(--main-text-color);
+  padding: 4px 32px 32px 4px;
+  flex-grow: 1;
+  text-align: left;
+}
+
 .tag {
 	font-size: 16px;
-	border: none;
 	font-family: "Compagnon-Medium", sans-serif;
-	padding: 8px 16px;
 }
 
 .tag:hover, select:hover {
@@ -378,23 +415,14 @@ html, body {
 select {
 	font-size: 16px;
 	font-family: "Compagnon-Medium", sans-serif;
-	border: none;
-}
-
-select, .tag {
-	background-color: var(--bg-color);
-	color: var(--main-text-color);
-  border: 1px solid var(--main-text-color);
-  padding: 4px 32px 32px 4px;
-  flex-grow: 1;
-  text-align: left;
 }
 
 #bottom {
 	display: flex;
 	height: 100%;
 	overflow: hidden;
-  margin-bottom: 10px;
+  border-right: 2px solid var(--main-text-color);
+  border-bottom: 2px solid var(--main-text-color);
 }
 
 #results {
@@ -403,7 +431,8 @@ select, .tag {
 	background-color: var(--bg-color);
 	overflow: scroll;
   padding-top: 0;
-  border-radius: 3px;
+  border-right: 1px solid var(--main-text-color);
+  border-left: 1px solid var(--main-text-color);
 }
 
 #map {
@@ -442,5 +471,63 @@ select, .tag {
 
 #readmore:hover, #bingo:hover, #github:hover {
 	color: #8F1409;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #top {
+    flex-direction: column;
+  }
+
+  #title {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #filtering {
+    display: none;
+  }
+
+  #filteringMobile {
+    display: flex;
+    border-top: 1px solid var(--main-text-color);
+  }
+
+  #filterTitleMobile {
+    text-transform: uppercase;
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+    border: 1px solid var(--main-text-color);
+    flex-grow: 10;
+    padding: 4px 32px 32px 4px;
+  }
+
+/*  #controls {
+    display: none;
+  }*/
+
+  #controlsMobile {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-flow: wrap;
+    max-width: -webkit-fill-available;
+  }
+
+  #bottom {
+    flex-direction: column;
+  }
+
+  #results {
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+  }
+
+  .result_item {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 </style>
