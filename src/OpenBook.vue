@@ -143,7 +143,8 @@ export default {
     <div id="container">
       <div id="top">
         <div id="title">
-          <p>OpenBook</p>
+          <p id="logo">OpenBook</p>
+          <p id="logoMobile">oo</p>
           <div id="menuButtons">
             <button id="readmore" type="button">Read more</button>
             <button id="bingo" type="button">Bingo</button>
@@ -185,7 +186,7 @@ export default {
 
           <!-- 3 more fields which are not tagged by openstreetmap, so will need to be added manually -->
           <TagButton @click="toggleFilter" :filter="['lessons', true]" label="lessons" :isActive="this.isActiveFilter('lessons')" />
-          <TagButton @click="toggleFilter" :filter="['open_late', true]" label="open after 6pm" :isActive="this.isActiveFilter('open_late')" />
+          <TagButton @click="toggleFilter" :filter="['opening_hours', true]" label="open after 6pm" :isActive="this.isActiveFilter('opening_hours')" />
           <TagButton @click="toggleFilter" :filter="['wheelchair', 'yes', 'limited']" label="wheelchair" :isActive="this.isActiveFilter('wheelchair')" />
 
           <select name="topic" @change="toggleSelect" id="topic-select" :class="{active: this.isActiveFilter('topic')}">
@@ -341,11 +342,29 @@ html, body {
   text-align: center;
 }
 
-#title logo{
-	width: 500px;
-	padding: 24px;
-	font-family: "Compagnon-Bold", serif;
-	font-size: 16px;
+#logoMobile {
+  display: none;
+}
+
+#logotext {
+  font-family: "Compagnon-Bold", serif;
+}
+
+#menuButtons {
+  display: flex;
+  padding-top: 8px;
+}
+
+#readmore, #bingo, #github {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #0A278B;
+  font-size: 16px;
+}
+
+#readmore:hover, #bingo:hover, #github:hover {
+  color: #8F1409;
 }
 
 #filter {
@@ -457,26 +476,6 @@ select {
  	width: 600px;
 }
 
-#logotext {
-	font-family: "Compagnon-Bold", serif;
-}
-
-#menuButtons {
-	display: flex;
-	padding-top: 8px;
-}
-
-#readmore, #bingo, #github {
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	color: #0A278B;
-}
-
-#readmore:hover, #bingo:hover, #github:hover {
-	color: #8F1409;
-}
-
 @media only screen and (max-width: 600px) {
 
   #top {
@@ -486,6 +485,28 @@ select {
   #title {
     width: 100%;
     box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 12px;
+    line-height: 20px;
+    align-items: baseline;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #logoMobile {
+    display: block;
+  }
+
+  #menuButtons {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  #menuButtons button{
+    font-size: 18px;
   }
 
   #filtering {
@@ -531,6 +552,7 @@ select {
     width: 100%;
     height: 20%;
     box-sizing: border-box;
+    overflow-y: hidden;
   }
 
   .result_item {
