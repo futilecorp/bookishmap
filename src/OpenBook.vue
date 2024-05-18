@@ -106,7 +106,11 @@ export default {
       }
     },
     toggleFilter(e) {
-      const [field, ...values] = e.target.__vnode.props['data-filter'];
+      console.log("one");
+      //this now works for fields that are string like second hand and wheelchair
+      //but not the ones that are boolean so seems like needs to be different functions or smt
+      const [field, ...values] = e.target.dataset['filter'].split(',');
+      console.log("two");
       const isAlreadyActive = this.filter.findIndex((f) => f[0] == field && f[1] == values[0]);
       if (isAlreadyActive == -1) {
         // add
