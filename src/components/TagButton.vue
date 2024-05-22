@@ -11,7 +11,7 @@
 </script>
 
 <template>
-  <button :class="{tag: true, active: this.isActive}" type="button" :data-filter="actualTag">{{ this.label }}</button>
+  <button @click="$emit('toggleFilter', this.filter)" :class="{tag: true, active: this.isActive}" type="button" :data-filter="actualTag">{{ this.label }}</button>
 </template>
 
 <style>

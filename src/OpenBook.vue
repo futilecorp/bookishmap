@@ -76,7 +76,7 @@ export default {
         })
     },
     selectHighlight(id = null) {
-      // this method is called when an entry is clicked on the map
+      // this method is called when an entry is toggleFilter on the map
       // setting this entry as highlighted adds a class which makes sure the 
       // summary is expanded to display all details
       this.highlighted = id;
@@ -105,14 +105,10 @@ export default {
         this.filter.push([field, ...values]);
       }
     },
-    toggleFilter(e) {
-      console.log("one");
-      //this now works for fields that are string like second hand and wheelchair
-      //but not the ones that are boolean so seems like needs to be different functions or smt
-      const [field, ...values] = e.target.dataset['filter'].split(',');
-      console.log("two");
-      const isAlreadyActive = this.filter.findIndex((f) => f[0] == field && f[1] == values[0]);
-      if (isAlreadyActive == -1) {
+    toggleFilter(filter) {
+      const [field, ...values] = filter;
+      const isAlreadyActive = this.filter.findIndex((f) => f[0] === field && f[1] === values[0]);
+      if (isAlreadyActive === -1) {
         // add
         this.setFilter(field, values);
       } else {
@@ -174,11 +170,11 @@ export default {
           </select>
 
           <!-- second_hand tag according to https://wiki.openstreetmap.org/wiki/Key:second_hand -->
-          <TagButton @click="toggleFilter" :filter="['second_hand', 'yes', 'only']" label="second hand" :isActive="this.isActiveFilter('second_hand')" />
+          <TagButton @toggleFilter="toggleFilter" :filter="['second_hand', 'yes', 'only']" label="second hand" :isActive="this.isActiveFilter('second_hand')" />
           <!-- openstreetmap has no events tag, needs to be added to the entries manually -->
-          <TagButton @click="toggleFilter" :filter="['events', true]" label="events" :isActive="this.isActiveFilter('events')" />
+          <TagButton @toggleFilter="toggleFilter" :filter="['events', true]" label="events" :isActive="this.isActiveFilter('events')" />
           <!-- same -->
-          <TagButton @click="toggleFilter" :filter="['snacks', true]" label="coffee/snack" :isActive="this.isActiveFilter('snacks')"/>
+          <TagButton @toggleFilter="toggleFilter" :filter="['snacks', true]" label="coffee/snack" :isActive="this.isActiveFilter('snacks')"/>
 
           <select name="languages" @change="toggleSelect" id="lan-select" :class="{active: this.isActiveFilter('languages')}">
             <option value="">LANGUAGE</option>
@@ -189,9 +185,9 @@ export default {
           </select>
 
           <!-- 3 more fields which are not tagged by openstreetmap, so will need to be added manually -->
-          <TagButton @click="toggleFilter" :filter="['lessons', true]" label="lessons" :isActive="this.isActiveFilter('lessons')" />
-          <TagButton @click="toggleFilter" :filter="['opening_hours', true]" label="open after 6pm" :isActive="this.isActiveFilter('opening_hours')" />
-          <TagButton @click="toggleFilter" :filter="['wheelchair', 'yes', 'limited']" label="wheelchair" :isActive="this.isActiveFilter('wheelchair')" />
+          <TagButton @toggleFilter="toggleFilter" :filter="['lessons', true]" label="lessons" :isActive="this.isActiveFilter('lessons')" />
+          <TagButton @toggleFilter="toggleFilter" :filter="['opening_hours', true]" label="open after 6pm" :isActive="this.isActiveFilter('opening_hours')" />
+          <TagButton @toggleFilter="toggleFilter" :filter="['wheelchair', 'yes', 'limited']" label="wheelchair" :isActive="this.isActiveFilter('wheelchair')" />
 
           <select name="topic" @change="toggleSelect" id="topic-select" :class="{active: this.isActiveFilter('topic')}">
             <option value="">SPECIAL TOPIC</option>
@@ -200,9 +196,9 @@ export default {
             <option value="quarterly">QUARTERLY TOPICS</option>
             <option value="scifi">SCIENCE FICTION</option>
           </select>
-          <TagButton @click="toggleFilter" label=""/>
-          <TagButton @click="toggleFilter" label=""/>
-          <TagButton @click="toggleFilter" label=""/>
+          <TagButton @toggleFilter="toggleFilter" label=""/>
+          <TagButton @toggleFilter="toggleFilter" label=""/>
+          <TagButton @toggleFilter="toggleFilter" label=""/>
           <TagButton id="goToResults" @click="showResults" label="Go to results" v-if="showControls"/>
         </div>
         </div>
