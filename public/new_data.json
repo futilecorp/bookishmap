@@ -273,7 +273,7 @@
 		"phone": "+4930266452220",
 		"events": true,
 		"coffee": false,
-		"languages": ["spanish", "portugues", "english"],
+		"languages": ["Spanish", "Portugues", "English"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -1482,7 +1482,7 @@
 		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Boardgames", "Vampires"]
+		"topics": ["Science Fiction", "Fantasy", "Boardgames", "Vampires"]
 	},
 	"618048288": {
 		"id": 618048288,
@@ -1663,10 +1663,10 @@
 		"address": ["Gneisenaustraße 2a", "10961 Berlin"],
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": ["English"]
+		"topics": []
 	},
 	"658357452": {
 		"id": 658357452,
@@ -1900,7 +1900,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Children and Young Adult books"]
+		"topics": ["Children's books", "Young Adult"]
 	},
 	"747528358": {
 		"id": 747528358,
@@ -2220,10 +2220,10 @@
 		"website": "http://www.regenbogen-buch.net",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Turkish"],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Turkish"]
+		"topics": []
 	},
 	"872523769": {
 		"id": 872523769,
@@ -2337,10 +2337,10 @@
 		"phone": "+49331708634",
 		"events": false,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": ["English"]
+		"topics": []
 	},
 	"1002586816": {
 		"id": 1002586816,
@@ -2583,7 +2583,7 @@
 		"phone": "+493025760980",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
 		"topics": ["English"]
@@ -2800,10 +2800,10 @@
 		"phone": "+493040500247",
 		"events": false,
 		"coffee": false,
-		"languages": [],
+		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": ["English"]
+		"topics": []
 	},
 	"1291369258": {
 		"id": 1291369258,
@@ -2886,10 +2886,10 @@
 		"phone": "+49 30 31801400",
 		"events": true,
 		"coffee": false,
-		"languages": [],
+		"languages": ["Japanese"],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Japanese", "Manga"]
+		"topics": ["Manga"]
 	},
 	"1313503793": {
 		"id": 1313503793,
@@ -3110,7 +3110,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Children books"]
+		"topics": ["Children's books"]
 	},
 	"1362209543": {
 		"id": 1362209543,
@@ -3353,7 +3353,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Children books"]
+		"topics": ["Children's books"]
 	},
 	"1481377095": {
 		"id": 1481377095,
@@ -3801,7 +3801,7 @@
 		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Children books"]
+		"topics": ["Children's books"]
 	},
 	"1684737379": {
 		"id": 1684737379,
@@ -5533,7 +5533,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Children", "Young Adult"]
+		"topics": ["Children's books", "Young Adult"]
 	},
 	"3095237630": {
 		"id": 3095237630,
@@ -6064,7 +6064,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Atrology", "Zen", "Yoga", "Meditation"]
+		"topics": ["Astrology", "Zen", "Yoga", "Meditation"]
 	},
 	"3553888907": {
 		"id": 3553888907,
@@ -7257,7 +7257,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": ["History of socialism", "History of workers' movement", "Art and literature of classical modernism", "The artistic avant-gardes of Easter Europe"]
+		"topics": ["History of socialism", "History of workers' movement", "Art and literature of classical modernism", "The artistic avant-gardes of Eastern Europe"]
 	},
 	"4432723694": {
 		"id": 4432723694,
@@ -7645,7 +7645,7 @@
 		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": ["Political philosophy", "Art and film theory", "Queer studies", "Gender studies", "Postcolonial studies"]
+		"topics": ["Political philosophy", "Art theory", "Film theory", "Queer studies", "Gender studies", "Postcolonial studies"]
 	},
 	"4761809022": {
 		"id": 4761809022,
@@ -10669,7 +10669,7 @@
 		"languages": ["English"],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Feminist literature", "Queer"]
 	},
 	"9724601890": {
 		"id": 9724601890,

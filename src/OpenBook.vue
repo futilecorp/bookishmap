@@ -43,7 +43,8 @@ export default {
         direction: 'top',
         className: 'maptooltip', // style by adding a CSS definition
       },
-      showControls: true
+      showControls: true, 
+      showResults: false,
     };
   },
   computed: {
@@ -53,7 +54,10 @@ export default {
     points() {
       let points = this.allPoints;
       for (let [field, ...values] of this.filter) {
-        points = points.filter((p) => values.includes(p[field])); 
+        points = points.filter((p) => {
+          if (Array.isArray(p[field])) { return values.some((val) => p[field].includes(val));}
+          else return values.includes(p[field]);
+        }); 
       }
       return points;
     },
@@ -102,6 +106,7 @@ export default {
         }
       } else if (values != null) {
         // add new
+        console.log(values);
         this.filter.push([field, ...values]);
       }
     },
@@ -119,6 +124,7 @@ export default {
     toggleSelect(e) {
       //TODO: when street library is selected, the other filters should be grayed out and 
       //not clickable. For libraries, the filter special topic should be removed
+      console.log(e.target.value);
       this.setFilter(e.target.name, e.target.value == '' ? null : [e.target.value]);
     },
     zoomToPoint(p) {
@@ -130,10 +136,7 @@ export default {
     toggleFilterMobile() {
       //this is for showing the filtering on mobile
       this.showControls = ! this.showControls;
-    },
-    showResults() {
-      //this is for showing the filtering on mobile
-      this.showControls = ! this.showControls;
+      this.showResults = ! this.showResults;
     }
   }
 };
@@ -146,7 +149,7 @@ export default {
           <p id="logo">OpenBook</p>
           <p id="logoMobile">oo</p>
           <div id="menuButtons">
-            <button id="readmore" type="button">Read more</button>
+            <button id="readmore" type="button">About</button>
             <button id="bingo" type="button">Bingo</button>
             <button id="github" type="button">Github</button>
           </div>
@@ -160,7 +163,7 @@ export default {
             <div id="filterTitleMobile" @click="toggleFilterMobile" label="filter">Filter by:</div>
             <TagButton @click="clearFilter" label="clear all" />
           </div>
-          <div id="controls" v-if="showControls">
+          <div id="controls" v-if="!$isMobile() || showResults">
           <!-- changing the selection applies a filter that field 'name' needs to have value 'value' -->
           <select name="type" @change="toggleSelect($event)" id="type-select" :class="{active: this.isActiveFilter('type')}">
             <option value="">TYPE</option>
@@ -174,14 +177,32 @@ export default {
           <!-- openstreetmap has no events tag, needs to be added to the entries manually -->
           <TagButton @toggleFilter="toggleFilter" :filter="['events', true]" label="events" :isActive="this.isActiveFilter('events')" />
           <!-- same -->
-          <TagButton @toggleFilter="toggleFilter" :filter="['snacks', true]" label="coffee/snack" :isActive="this.isActiveFilter('snacks')"/>
+          <TagButton @toggleFilter="toggleFilter" :filter="['coffee', true]" label="coffee/snack" :isActive="this.isActiveFilter('snacks')"/>
 
           <select name="languages" @change="toggleSelect" id="lan-select" :class="{active: this.isActiveFilter('languages')}">
             <option value="">LANGUAGE</option>
-            <option value="english">ENGLISH</option>
-            <option value="german">GERMAN</option>
-            <option value="polish">POLISH</option>
-            <option value="french">FRENCH</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Danish">Danish</option>
+            <option value="Dutch">Dutch</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Greek">Greek</option>
+            <option value="Hebrew">Hebrew</option>
+            <option value="Italian">Italian</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Korean">Korean</option>
+            <option value="Latin">Latin</option>
+            <option value="Norwegian">Norwegian</option>
+            <option value="Persian">Persian</option>
+            <option value="Polish">Polish</option>
+            <option value="Portugues">Portugues</option>
+            <option value="Russian">Russian</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Swedish">Swedish</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Ukrainian">Ukrainian</option>
+            <option value="Vietnamese">Vietnamese</option>
           </select>
 
           <!-- 3 more fields which are not tagged by openstreetmap, so will need to be added manually -->
@@ -189,23 +210,114 @@ export default {
           <TagButton @toggleFilter="toggleFilter" :filter="['opening_hours', true]" label="open after 6pm" :isActive="this.isActiveFilter('opening_hours')" />
           <TagButton @toggleFilter="toggleFilter" :filter="['wheelchair', 'yes', 'limited']" label="wheelchair" :isActive="this.isActiveFilter('wheelchair')" />
 
-          <select name="topic" @change="toggleSelect" id="topic-select" :class="{active: this.isActiveFilter('topic')}">
+          <select name="topics" @change="toggleSelect" id="topic-select" :class="{active: this.isActiveFilter('topics')}">
             <option value="">SPECIAL TOPIC</option>
-            <option value="children">CHILDREN BOOKS</option>
-            <option value="biographies">BIOGRAPHIES</option>
-            <option value="quarterly">QUARTERLY TOPICS</option>
-            <option value="scifi">SCIENCE FICTION</option>
+            <option value="Children's books">Children's books</option>
+            <option value="Design">Design</option>
+            <option value="Architecture">Architecture</option>
+            <option value="Art">Art</option>
+            <option value="Bauhaus">Bauhaus</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Crimes">Crimes</option>
+            <option value="Photography">Photography</option>
+            <option value="Typography">Typography</option>
+            <option value="Interior design">Interior design</option>
+            <option value="Theater">Theater</option>
+            <option value="Music">Music</option>
+            <option value="Film">Film</option>
+            <option value="City">City</option>
+            <option value="Politics">Politics</option>
+            <option value="Pop">Pop</option>
+            <option value="Economic Criticism">Economic Criticism</option>
+            <option value="Theory">Theory</option>
+            <option value="African literature">African literature</option>
+            <option value="Afrodiasporic literature">Afrodiasporic literature</option>
+            <option value="Comics">Comics</option>
+            <option value="Manga">Manga</option>
+            <option value="Artist's books">Artist's books</option>
+            <option value="North American studies">North American studies</option>
+            <option value="Boardgames">Boardgames</option>
+            <option value="Vampires">Vampires</option>
+            <option value="Young Adult">Young Adult</option>
+            <option value="Pop">Pop</option>
+            <option value="Economics">Economics</option>
+            <option value="Management">Management</option>
+            <option value="Medicine">Medicine</option>
+            <option value="Psychology">Psychology</option>
+            <option value="Kurdology">Kurdology</option>
+            <option value="Kurdish Studies">Kurdish Studies</option>
+            <option value="Maritime">Maritime</option>
+            <option value="Youth">Youth</option>
+            <option value="Subcultures">Subcultures</option>
+            <option value="Picture books">Picture books</option>
+            <option value="Christian">Christian</option>
+            <option value="Anarchism">Anarchism</option>
+            <option value="Travel">Travel</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Astrology">Astrology</option>
+            <option value="Zen">Zen</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Meditation">Meditation</option>
+            <option value="Rail transport">Rail transport</option>
+            <option value="Judaism">Judaism</option>
+            <option value="Queer">Queer</option>
+            <option value="LBGTI+">LBGTI+</option>
+            <option value="Care">Care</option>
+            <option value="Grief">Grief</option>
+            <option value="Hospice">Hospice</option>
+            <option value="Theology">Theology</option>
+            <option value="Community work">Community work</option>
+            <option value="Catechesis">Catechesis</option>
+            <option value="Ecumenism">Ecumenism</option>
+            <option value="Spirituality">Spirituality</option>
+            <option value="Asian studies">Asian studies</option>
+            <option value="African studies">African studies</option>
+            <option value="Islamic Theology">Islamic Theology</option>
+            <option value="Graphic novel">Graphic novel</option>
+            <option value="Silent Books">Silent Books</option>
+            <option value="History and Life in Communism">History and Life in Communism</option>
+            <option value="History of socialism">History of socialism</option>
+            <option value="History of workers' movement">History of workers' movement</option>
+            <option value="Art and literature of classical modernism">Zen</option>
+            <option value="The artistic avant-gardes of Easter Europe">The artistic avant-gardes of Eastern Europe</option>
+            <option value="Kabbalah">Kabbalah</option>
+            <option value="Political philosophy">Political philosophy</option>
+            <option value="Art theory">Art theory</option>
+            <option value="Film theory">Film theory</option>
+            <option value="Queer studies">Queer studies</option>
+            <option value="Gender studies">Gender studies</option>
+            <option value="Postcolonial studies">Postcolonial studies</option>
+            <option value="Education">Education</option>
+            <option value="Pedagogy">Pedagogy</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Musicology">Musicology</option>
+            <option value="Sub/cultural and natural phenomena">Sub/cultural and natural phenomena</option>
+            <option value="Berlin's history">Berlin's history</option>
+            <option value="German studies">German studies</option>
+            <option value="Scandinavian studies">Scandinavian studies</option>
+            <option value="Feminist literature">Feminist literature</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Persian">Persian</option>
+            <option value="Jewish history">Jewish history</option>
+            <option value="Jewish culture">Jewish culture</option>
+            <option value="China">China</option>
+            <option value="Maps">Maps</option>
+            <option value="Travel guides">Travel guides</option>
+            <option value="Travel reports">Travel reports</option>
+            <option value="Globes">Globes</option>
+            <option value="Atlases">Atlases</option>
           </select>
           <TagButton @toggleFilter="toggleFilter" label=""/>
           <TagButton @toggleFilter="toggleFilter" label=""/>
           <TagButton @toggleFilter="toggleFilter" label=""/>
-          <TagButton id="goToResults" @click="showResults" label="Go to results" v-if="showControls"/>
+          <TagButton id="goToResults" @click="showResults" label="Go to results" v-if="showResults"/>
         </div>
         </div>
       </div>
 
       <div id="bottom">
-        <div id="results">
+        <div id="results" v-if="!showResults">
           <ListEntry v-for="p in points" :data="p" ref="items"
               @click="zoomToPoint(p)"
               :open="p.id == this.highlighted"
@@ -415,6 +527,7 @@ select, .tag {
   padding: 4px 32px 32px 4px;
   flex-grow: 1;
   text-align: left;
+  border-radius: 0px;
 }
 
 .tag {
@@ -438,6 +551,7 @@ select, .tag {
 select {
 	font-size: 16px;
 	font-family: "Compagnon-Medium", sans-serif;
+  text-transform: uppercase;
 }
 
 #bottom {
