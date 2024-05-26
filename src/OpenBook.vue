@@ -28,6 +28,7 @@ export default {
       maptilerId: "basic-v2-light/256",
       maptilerApi: "h24s9QHr7NmztAXKJCDP",
       zoom: 12,
+      initCenter: [52.5105, 13.4061],
       circleMarkerStyle:{
         radius: 8,
         fillColor: "#DA9239",
@@ -81,9 +82,9 @@ export default {
         })
     },
     selectHighlight(id = null) {
-      // this method is called when an entry is toggleFilter on the map
+      // this method is called when an entry is clicked on the map.
       // setting this entry as highlighted adds a class which makes sure the 
-      // summary is expanded to display all details
+      // summary in the sidebar listing is expanded to display all entry details
       this.highlighted = id;
       if (this.highlighted != null) {
         this.$refs.items.find((e) => e.data.id == this.highlighted).$el.scrollIntoView();
@@ -130,9 +131,7 @@ export default {
     },
     zoomToPoint(p) {
       this.$refs.map.leafletObject.flyTo(p.coords, 15);
-      // TODO also highlight on map somehow? yessss. also the zooming
-      // is a bit weird, but maybe the highlight of just the selected bookstore
-      // would solve 
+      this.$refs[p.id][0].leafletObject.openTooltip();
     },
     toggleFilterMobile() {
       //this is for showing the filtering on mobile
@@ -339,10 +338,12 @@ export default {
               :class="{ highlighted: p.id == this.highlighted }"></ListEntry>
         </div>
 
-        <l-map ref="map" v-model:zoom="zoom" :minZoom="10" :center="[52.5105, 13.4061]"
+        <l-map ref="map" v-model:zoom="zoom" :minZoom="10" :center="initCenter"
             @movestart="selectHighlight()">
           <l-tile-layer :url="maptilerUrl"></l-tile-layer>
           <l-circle-marker v-for="p in points"
+              :ref="p.id"
+              :key="p.id"
               :lat-lng="p.coords"
               @click="selectHighlight(p.id)"
               :options="circleMarkerStyle">
