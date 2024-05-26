@@ -19,16 +19,27 @@ export default {
     LTooltip,
     TagButton
   },
+  created() {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(pos => {
+        this.userLocation = [pos.coords.latitude, pos.coords.longitude];
+        // TODO only if inside Berlin bounds!!!
+        this.$refs.map.leafletObject.panTo(this.userLocation);
+      }, err => {
+      });
+    }
+  },
   data() {
     return {
       allPoints: [], // before filtering
       filter: [], // an array of [key, value, (morevalues...)] arrays
       /* points: [], // after filtering */
       highlighted: null, // id of currently selected shop
+      initCenter: [52.5105, 13.4061],
+      userLocation: null,
       maptilerId: "basic-v2-light/256",
       maptilerApi: "h24s9QHr7NmztAXKJCDP",
       zoom: 12,
-      initCenter: [52.5105, 13.4061],
       circleMarkerStyle:{
         radius: 8,
         fillColor: "#DA9239",
@@ -83,6 +94,11 @@ export default {
     },
     selectHighlight(id = null) {
       // this method is called when an entry is clicked on the map.
+
+      // if another point was highlighted before, close any open tooltips
+      if (this.highlighted) {
+        this.$refs[this.highlighted][0].leafletObject.closeTooltip();
+      }
       // setting this entry as highlighted adds a class which makes sure the 
       // summary in the sidebar listing is expanded to display all entry details
       this.highlighted = id;
@@ -130,6 +146,7 @@ export default {
       this.setFilter(e.target.name, e.target.value == '' ? null : [e.target.value]);
     },
     zoomToPoint(p) {
+      this.highlighted = p.id;
       this.$refs.map.leafletObject.flyTo(p.coords, 15);
       this.$refs[p.id][0].leafletObject.openTooltip();
     },
@@ -340,7 +357,22 @@ export default {
 
         <l-map ref="map" v-model:zoom="zoom" :minZoom="10" :center="initCenter"
             @movestart="selectHighlight()">
+          <!-- background map -->
           <l-tile-layer :url="maptilerUrl"></l-tile-layer>
+
+          <!-- user geolocation marker -->
+          <l-circle-marker v-if="userLocation"
+              :lat-lng="userLocation"
+              :options="{
+                radius: 6,
+                fillColor: '#0A278B',
+                color: 'white',
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 1
+                }" />
+
+          <!-- map entry markers -->
           <l-circle-marker v-for="p in points"
               :ref="p.id"
               :key="p.id"
@@ -350,6 +382,7 @@ export default {
             <!-- hover tooltip -->
             <l-tooltip :options="hoverTooltipOptions">{{ p.name }}</l-tooltip>
           </l-circle-marker>
+
         </l-map>
       </div>
 
