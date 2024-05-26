@@ -6,7 +6,6 @@ import { LCircleMarker, LMap, LMarker, LTileLayer, LTooltip } from "@vue-leaflet
 
 import ListEntry from './components/ListEntry.vue';
 import TagButton from './components/TagButton.vue';
-
 export default {
   beforeMount() {
     this.getPoints();
@@ -45,6 +44,8 @@ export default {
       },
       showControls: true, 
       showResults: false,
+      showAbout: false,
+      showBingo: false,
     };
   },
   computed: {
@@ -137,6 +138,20 @@ export default {
       //this is for showing the filtering on mobile
       this.showControls = ! this.showControls;
       this.showResults = ! this.showResults;
+    },
+    openAbout() {
+      this.showAbout = true;
+      this.showBingo = false;
+    },
+    openBingo() {
+      this.showBingo= true;
+      this.showAbout = false;
+    },
+    closeAbout() {
+      this.showAbout = false;
+    },
+    closeBingo() {
+      this.showBingo = false;
     }
   }
 };
@@ -149,9 +164,9 @@ export default {
           <p id="logo">OpenBook</p>
           <p id="logoMobile">oo</p>
           <div id="menuButtons">
-            <button id="readmore" type="button">About</button>
-            <button id="bingo" type="button">Bingo</button>
-            <button id="github" type="button">Github</button>
+            <button @click="openAbout" id="readmore" type="button">About</button>
+            <button @click="openBingo" id="bingo" type="button">Bingo</button>
+            <a id="github" href="https://github.com/futilecorp/bookishmap/tree/vue" target="_blank">Github</a>
           </div>
         </div>
         <div id="filter">
@@ -311,7 +326,7 @@ export default {
           <TagButton @toggleFilter="toggleFilter" label=""/>
           <TagButton @toggleFilter="toggleFilter" label=""/>
           <TagButton @toggleFilter="toggleFilter" label=""/>
-          <TagButton id="goToResults" @click="showResults" label="Go to results" v-if="showResults"/>
+          <TagButton id="goToResults" @click="toggleFilterMobile" label="Go to results" v-if="showResults"/>
         </div>
         </div>
       </div>
@@ -338,16 +353,24 @@ export default {
       </div>
 
     </div>
-    <div id="popupDescription">
-      <span id="logotext">OpenBook</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    <div id="popupAbout" v-if="showAbout">
+      <span id="logotext">OpenBook</span> - Berlin is a decentralised, open source map focused on book places in Berlin. 
+      The map offers more details about the book places and filtering options to make it easier to find what you are looking for. It is an opportunity for anyone to discover new favourite book places, use of libraries, sharing of books as well as an exercise in qualitative data gathering and presentation. By decentralised we mean that anyone can contribute to the project (by suggesting new filtering options, helping in data gathering etc.) as long as the information provided is factual and harassment free. <br/>
+      The open source project (available on github) itself is imagined in a way that would give anyone an opportunity to create a decentralised map of their own (any topic, any place). Some knowledge, or at least interest in coding is required for now but we will aim to provide sufficient documentation for the barrier to be minimal. Please keep in mind that the project is for non-profit and done in our spare time so things might not develop fast. Any help is appreciated. 
       <br/><br/>
-      <button id="closeReadMore" type="button">Close</button>
+      For a daily dose of books around Berlin, checkout the Instagram profile. <br/>
+      Need some prompts to start exploring? Check out the Bingo! 
+      <br/><br/>
+      If you encounter any information that is not correct, want to collaborate or just tell us you like the project, write us at: ...
+      <br/><br/>
+      <button @click="closeAbout" id="closeAbout" type="button">Close</button>
     </div>
-    <div id="popupBingo">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    <div id="popupBingo" v-if="showBingo">
+      Explore some new book places by playing the Bingo!
       <br/><br/>
-      <!--img src="/bingo.png"-->
-      <button id="closeBingo" type="button">Close</button>
+      <img src="./assets/bingo.jpg" id="bingoImg">
+      <br/><br/>
+      <button @click="closeBingo" id="closeBingo" type="button">Close</button>
     </div>
   </template>
 
@@ -460,6 +483,8 @@ html, body {
 
 #logotext {
   font-family: "Compagnon-Bold", serif;
+  width: auto;
+  font-size: 20px;
 }
 
 #menuButtons {
@@ -468,11 +493,17 @@ html, body {
 }
 
 #readmore, #bingo, #github {
+  font-family: "Compagnon-Medium", sans-serif;;
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: #0A278B;
   font-size: 16px;
+  text-decoration: none;
+}
+
+#github {
+  padding: 1px 6px;
 }
 
 #readmore:hover, #bingo:hover, #github:hover {
@@ -552,6 +583,7 @@ select {
 	font-size: 16px;
 	font-family: "Compagnon-Medium", sans-serif;
   text-transform: uppercase;
+  max-width: 100%;
 }
 
 #bottom {
@@ -577,17 +609,46 @@ select {
 	width: 100%;
 }
 
-#popupDescription, #popupBingo {
-	display: none;
+#popupAbout, #popupBingo {
 	position: absolute;
 	z-index: 500;
-	background-color: #CA4023;
+	background-color: var(--bg-color);
+  color: var(--main-text-color);
+  border: 2px solid var(--main-text-color);
 	margin-top: 200px;
   margin-left: 500px;
  	top: 0;
  	flex-direction: column;
  	padding: 16px;
- 	width: 600px;
+  overflow-y: scroll;
+}
+
+#popupAbout {
+  width: 600px;
+}
+
+#popupBingo {
+  display: flex;
+  width: 400px;
+}
+
+#closeAbout, #closeBingo {
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  border: 2px solid var(--main-text-color);
+  padding: 4px 32px 32px 4px;
+  flex-grow: 1;
+  text-align: left;
+  border-radius: 0px;
+}
+
+#closeAbout:hover, #closeBingo:hover {
+  background-color: var(--hl-color);
+  cursor: pointer;
+}
+
+#closeBingo {
+  width: fit-content;
 }
 
 @media only screen and (max-width: 600px) {
@@ -617,10 +678,21 @@ select {
   #menuButtons {
     padding-left: 12px;
     padding-right: 12px;
+    align-items: baseline;
   }
 
   #menuButtons button{
     font-size: 18px;
+  }
+
+  #github {
+    font-size: 18px;
+  }
+
+  #filter {
+    border-left: 1px solid var(--main-text-color);
+    border-right: 1px solid var(--main-text-color);
+    box-sizing: border-box;
   }
 
   #filtering {
@@ -660,16 +732,36 @@ select {
 
   #bottom {
     flex-direction: column;
+    border-right: 1px solid var(--main-text-color);
   }
 
   #results {
     width: 100%;
-    height: 20%;
+    height: 30%;
     box-sizing: border-box;
-    overflow-y: hidden;
+    border-top: none;
+    border-bottom: 2px solid var(--main-text-color);
+    overflow-x: hidden;
   }
 
   .result_item {
+    width: 100%;
+    box-sizing: border-box;
+    border-right: none;
+  }
+
+  #popupAbout, #popupBingo {
+    position: absolute;
+    z-index: 500;
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+    border: 2px solid var(--main-text-color);
+    margin-top: 0;
+    margin-left: 0;
+    top: 15%;
+    flex-direction: column;
+    padding: 16px;
+    overflow-y: scroll;
     width: 100%;
     box-sizing: border-box;
   }
