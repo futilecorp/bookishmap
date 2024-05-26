@@ -20,14 +20,20 @@ export default {
     TagButton
   },
   created() {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(pos => {
-        this.userLocation = [pos.coords.latitude, pos.coords.longitude];
-        // TODO only if inside Berlin bounds!!!
-        this.$refs.map.leafletObject.panTo(this.userLocation);
-      }, err => {
-      });
-    }
+    navigator.permissions.query({name: 'geolocation'}).then((result) => {
+      if (result.state === 'granted') {
+        navigator.geolocation.getCurrentPosition(pos => {
+          this.userLocation = [pos.coords.latitude, pos.coords.longitude];
+          //this.$refs.map.leafletObject.panTo(this.userLocation);
+        }, (error) => {
+          console.log('geolocation permission granted but failed to get position');
+        }, { enableHighAccuracy: true, timeout: 30000 });
+      } else {
+        console.log('geolocation permission refused');
+      }
+    }, (error) => {
+      console.log('failed to query permission')
+    })
   },
   data() {
     return {
@@ -356,7 +362,7 @@ export default {
         </div>
 
         <l-map ref="map" v-model:zoom="zoom" :minZoom="10" :center="initCenter"
-            @movestart="selectHighlight()">
+            @movestart="selectHighlight()" @click="this.$refs.map.leafletObject.zoomIn()">
           <!-- background map -->
           <l-tile-layer :url="maptilerUrl"></l-tile-layer>
 
@@ -378,6 +384,7 @@ export default {
               :key="p.id"
               :lat-lng="p.coords"
               @click="selectHighlight(p.id)"
+              :bubblingMouseEvents="false"
               :options="circleMarkerStyle">
             <!-- hover tooltip -->
             <l-tooltip :options="hoverTooltipOptions">{{ p.name }}</l-tooltip>
