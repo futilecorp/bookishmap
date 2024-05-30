@@ -148,6 +148,7 @@
 		},
 		"address": ["closed until 02.09.2024. Halemweg 18", "13627 Berlin"],
 		"website": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/",
+		"opening_hours": "",
 		"phone": "030 9029 25284",
 		"events": true,
 		"coffee": false,
@@ -1216,7 +1217,9 @@
 			"wheelchair": "limited"
 		},
 		"address": ["Needs to be checked"],
+		"opening_hours": "",
 		"website": "",
+		"opening_hours": "",
 		"phone": "",
 		"events": true,
 		"coffee": false,
@@ -1591,6 +1594,7 @@
 		"address": ["Schulstraße 2", "16356 Werneuchen"],
 		"wheelchair": "no",
 		"website": "https://www.bibliothek.info/werneuchen/",
+		"opening_hours": "",
 		"phone": "+493339876911",
 		"events": true,
 		"coffee": false,
@@ -1768,6 +1772,7 @@
 			"website": "https://schulbuecher-berlin.de/"
 		},
 		"address": ["Güntzelstraße 63", "10717 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "no",
 		"phone": "+49308210021",
 		"events": true,
@@ -3257,6 +3262,7 @@
 		},
 		"address": ["Giesebrechtstraße 18", "10629 Berlin"],
 		"website": "http://www.buchhandlungwinter.de/",
+		"opening_hours": "",
 		"phone": "+493080578677",
 		"events": true,
 		"coffee": false,
@@ -4071,6 +4077,7 @@
 			"wikidata": "Q107260810"
 		},
 		"address": ["Barstraße 61", "10713 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -4739,6 +4746,7 @@
 		},
 		"address": ["Wiener Straße 17", "10999 Berlin"],
 		"website": "https://www.kisch-online.de",
+		"opening_hours": "",
 		"phone": "03025293644",
 		"events": true,
 		"coffee": false,
@@ -5835,6 +5843,7 @@
 			"wikidata": "Q107284393"
 		},
 		"address": ["Sredzkistraße 48", "10435 Berlin"],
+		"opening_hours":"",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -5917,6 +5926,7 @@
 			"public_bookcase:type": "phone_box"
 		},
 		"address": ["Teltower Damm 230", "14167 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -6370,6 +6380,7 @@
 			"wikidata": "Q108649872"
 		},
 		"address": ["Bahnhofstraße 1A", "15732 Eichwalde"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -6767,6 +6778,7 @@
 			"wikidata": "Q108631337"
 		},
 		"address": ["Richard-Israel-Straße 4d", "15732 Schulzendorf"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -7202,6 +7214,7 @@
 			"wikidata": "Q107263919"
 		},
 		"address": ["Müllerstraße 74", "13349 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"phone": "",
 		"events": true,
@@ -7414,6 +7427,7 @@
 			"wikidata": "Q107259167"
 		},
 		"address": ["Kleine Gertraudenstraße 19", "10178 Berlin"],
+		"opening_hours": "",
 		"website": "",
 		"phone": "",
 		"events": true,
@@ -7437,6 +7451,7 @@
 			"website": "https://buecherboxx.wordpress.com/"
 		},
 		"address": ["Osloer Str. 12", "13359 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"phone": "",
 		"events": true,
@@ -7957,6 +7972,7 @@
 			"website": "https://www.obersee-orankesee.de/"
 		},
 		"address": ["Waldowstraße 43", "13053 Berlin"],
+		"opening_hours": "",
 		"name": "Bibliothek - free library box",
 		"wheelchair": "no",
 		"events": true,
@@ -8054,6 +8070,7 @@
 			"public_bookcase:type": "phone_box"
 		},
 		"address": ["Markusplatz", "12167 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "no",
 		"website": "",
 		"phone": "",
@@ -8428,6 +8445,7 @@
 			"public_bookcase:type": "phone_box"
 		},
 		"address": ["Pablo-Neruda-Straße 12", "12559 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "no",
 		"website": "",
 		"phone": "",
@@ -8954,6 +8972,7 @@
 			"public_bookcase:type": "phone_box"
 		},
 		"address": ["Pankower Allee 53", "13409 Berlin"],
+		"opening_hours": "",
 		"name": "Bücher Zelle",
 		"wheelchair": "no",
 		"website": "",
@@ -9472,6 +9491,7 @@
 			"wikidata": "Q107261244"
 		},
 		"address": ["Mierendorffpl. 7", "10589 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -9664,6 +9684,7 @@
 			"public_bookcase:type": "wooden_cabinet"
 		},
 		"address": ["Südstern", "10961 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -9765,6 +9786,7 @@
 			"shop": "books"
 		},
 		"address": ["Wilmersdorfer Str. 10", "10585 Berlin"],
+		"opening_hours": "Mo-Fr 15:00-17:00; Sa 11:00-17:00",
 		"second_hand": "yes",
 		"wheelchair": "no",
 		"website": "https://sportantiquariat.de/",
@@ -9774,7 +9796,7 @@
 		"languages": [],
 		"orders": false,
 		"lessons": false,
-		"topics": []
+		"topics": ["Film", "History", "Art", "Sport"]
 	},
 	"7719738275": {
 		"id": 7719738275,
@@ -9789,6 +9811,7 @@
 			"public_bookcase:type": "phone_box"
 		},
 		"address": ["Bahnhofstraße 28", "12305 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "TODO",
 		"website": "",
 		"phone": "",
@@ -9814,6 +9837,7 @@
 			"wikidata": "Q107264699"
 		},
 		"address": ["Sigmaringer Str. 6-116", "10713 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -9945,6 +9969,7 @@
 			"public_bookcase:type": "phone_box"
 		},
 		"address": ["Barbarossastraße 65", "10781 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -10118,6 +10143,7 @@
 			"public_bookcase:type": "metal_cabinet"
 		},
 		"address": ["Tuchollapl. 6", "10317 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "yes",
 		"website": "",
 		"phone": "",
@@ -10222,6 +10248,7 @@
 			"wikidata": "Q107259709"
 		},
 		"address": ["Seelingstraße 20", "14059 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -10330,6 +10357,7 @@
 			"public_bookcase:type": "phone_box"
 		},
 		"address": ["Gierkepl. 1", "10585 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "",
 		"website": "",
 		"phone": "",
@@ -10425,6 +10453,7 @@
 			"wikidata": "Q108626582"
 		},
 		"address": ["Wernshauser Str. 16", "12249 Berlin"],
+		"opening_hours": "",
 		"name": "Bücherbox",
 		"wheelchair": "yes",
 		"website": "",
@@ -10446,6 +10475,7 @@
 			"wikidata": "Q108626661"
 		},
 		"address": ["Blankenhainer Str. 4", "12249 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "yes",
 		"website": "",
 		"phone": "",
@@ -10553,6 +10583,7 @@
 			"shop": "books"
 		},
 		"address": ["temporary closed Meraner Straße 6", "10825 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "TODO",
 		"website": "",
 		"phone": "+49308546545",
@@ -10601,6 +10632,7 @@
 			"public_bookcase:type": "metal_cabinet"
 		},
 		"address": ["Waldsassener Str.", "12279 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "yes",
 		"website": "",
 		"phone": "",
@@ -10624,6 +10656,7 @@
 			"public_bookcase:type": "reading_box"
 		},
 		"address": ["Tilkeroder Weg 28", "12277 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "TODO",
 		"website": "",
 		"phone": "",
@@ -10730,12 +10763,13 @@
 			"name": "Kollektivbibliothek"
 		},
 		"address": ["Mariannenplatz 2B", "10997 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "TODO",
 		"website": "https://kollektivbibliothek.noblogs.org/",
 		"phone": "",
 		"events": true,
 		"coffee": false,
-		"languages": ["English", "Spanish"],
+		"languages": ["English", "Spanish", "Italian", "French", "Catalan", "Greek"],
 		"orders": false,
 		"lessons": false,
 		"topics": []
@@ -10748,6 +10782,7 @@
 			"amenity": "public_bookcase"
 		},
 		"address": ["Tietzstraße 44", "13509 Berlin"],
+		"opening_hours": "",
 		"name": "Bücherbox",
 		"wheelchair": "TODO",
 		"website": "",
@@ -10942,6 +10977,7 @@
 			"public_bookcase:type": "wooden_cabinet"
 		},
 		"address": ["Jeverstraße 9, 12157 Berlin"],
+		"opening_hours": "",
 		"name": "Public bookcase",
 		"wheelchair": "yes",
 		"website": "",
@@ -10993,6 +11029,7 @@
 			"wheelchair": "no"
 		},
 		"address": ["Stienitzseestraße 20", "12489 Berlin"],
+		"opening_hours": "",
 		"website": "",
 		"phone": "",
 		"events": true,
@@ -11140,6 +11177,7 @@
 			"public_bookcase:type": "shelf"
 		},
 		"address": ["TODO hide"],
+		"opening_hours": "",
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11161,6 +11199,7 @@
 			"public_bookcase:type": "sculpture"
 		},
 		"address": ["Mahlsdorfer Str. 52", "12555 Berlin"],
+		"opening_hours": "",
 		"name": "Öffentlicher Bücherschrank",
 		"wheelchair": "TODO",
 		"website": "",
@@ -11181,6 +11220,7 @@
 			"fixme": "position estimated, should exist before the pottery shop"
 		},
 		"address": ["Peter-Hille-Straße 74", "12587 Berlin"],
+		"opening_hours": "",
 		"name": "öffentliche bücherschränke",
 		"wheelchair": "TODO",
 		"website": "",
@@ -11222,6 +11262,7 @@
 			"indoor": "yes"
 		},
 		"address": ["TODO hide"],
+		"opening_hours": "",
 		"name": "TODO",
 		"wheelchair": "TODO",
 		"website": "TODO",
@@ -11244,6 +11285,7 @@
 			"noname": "yes"
 		},
 		"address": ["Zikadenweg 60", "14055 Berlin"],
+		"opening_hours": "",
 		"name": "Open bookcase",
 		"wheelchair": "yes",
 		"website": "",
@@ -11266,6 +11308,7 @@
 			"public_bookcase:type": "glass_cabinet"
 		},
 		"address": ["Winklerstraße 60", "12623 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "TODO",
 		"website": "",
 		"phone": "",
@@ -11310,6 +11353,7 @@
 			"website": "https://www.buecherboxx.com"
 		},
 		"address": ["not exact coordinates virtuell - S Halensee", "10711 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "TODO",
 		"phone": "",
 		"events": true,
@@ -11400,6 +11444,7 @@
 			"name": "Bücherzelle"
 		},
 		"address": ["Paul-Zobel-Straße", "10367 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "yes",
 		"website": "",
 		"phone": "",
@@ -11441,6 +11486,7 @@
 			"shop": "books"
 		},
 		"address": ["Florastraße 61", "13187 Berlin"],
+		"opening_hours": "",
 		"name": "einBuch.haus",
 		"wheelchair": "no",
 		"website": "https://einbuch.haus/",
@@ -11535,6 +11581,7 @@
 			"name": "Kinderbücherbox"
 		},
 		"address": ["Fischerinsel 8", "10179 Berlin"],
+		"opening_hours": "",
 		"wheelchair": "no",
 		"website": "",
 		"phone": "",

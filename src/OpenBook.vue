@@ -20,20 +20,12 @@ export default {
     TagButton
   },
   created() {
-    navigator.permissions.query({name: 'geolocation'}).then((result) => {
-      if (result.state === 'granted') {
-        navigator.geolocation.getCurrentPosition(pos => {
-          this.userLocation = [pos.coords.latitude, pos.coords.longitude];
-          //this.$refs.map.leafletObject.panTo(this.userLocation);
-        }, (error) => {
-          console.log('geolocation permission granted but failed to get position');
-        }, { enableHighAccuracy: true, timeout: 30000 });
-      } else {
-        console.log('geolocation permission refused');
-      }
+    navigator.geolocation.getCurrentPosition(pos => {
+      this.userLocation = [pos.coords.latitude, pos.coords.longitude];
+        //this.$refs.map.leafletObject.panTo(this.userLocation);
     }, (error) => {
-      console.log('failed to query permission')
-    })
+      console.log('geolocation permission granted but failed to get position');
+    }, { enableHighAccuracy: true, timeout: 30000 });
   },
   data() {
     return {
@@ -74,6 +66,13 @@ export default {
       let points = this.allPoints;
       for (let [field, ...values] of this.filter) {
         points = points.filter((p) => {
+          console.log(field);
+          if (field === 'opening_hours') {
+            //const regEx = new RegExp("[19-22]");
+            //return regEx.test(p[field]);
+            console.log(p[field]);
+            return ["18:30", "19", "20", "21", "22", "23"].some((val) => p[field].includes(val));
+          }
           if (Array.isArray(p[field])) { return values.some((val) => p[field].includes(val));}
           else return values.includes(p[field]);
         }); 
@@ -130,7 +129,6 @@ export default {
         }
       } else if (values != null) {
         // add new
-        console.log(values);
         this.filter.push([field, ...values]);
       }
     },
@@ -148,7 +146,6 @@ export default {
     toggleSelect(e) {
       //TODO: when street library is selected, the other filters should be grayed out and 
       //not clickable. For libraries, the filter special topic should be removed
-      console.log(e.target.value);
       this.setFilter(e.target.name, e.target.value == '' ? null : [e.target.value]);
     },
     zoomToPoint(p) {
@@ -214,7 +211,7 @@ export default {
           <!-- openstreetmap has no events tag, needs to be added to the entries manually -->
           <TagButton @toggleFilter="toggleFilter" :filter="['events', true]" label="events" :isActive="this.isActiveFilter('events')" />
           <!-- same -->
-          <TagButton @toggleFilter="toggleFilter" :filter="['coffee', true]" label="coffee/snack" :isActive="this.isActiveFilter('snacks')"/>
+          <TagButton @toggleFilter="toggleFilter" :filter="['coffee', true]" label="coffee/snack" :isActive="this.isActiveFilter('coffee')"/>
 
           <select name="languages" @change="toggleSelect" id="lan-select" :class="{active: this.isActiveFilter('languages')}">
             <option value="">LANGUAGE</option>
@@ -370,9 +367,9 @@ export default {
           <l-circle-marker v-if="userLocation"
               :lat-lng="userLocation"
               :options="{
-                radius: 6,
-                fillColor: '#0A278B',
-                color: 'white',
+                radius: 10,
+                fillColor: '#162C74',
+                color: '#162C74',
                 weight: 1,
                 opacity: 1,
                 fillOpacity: 1
@@ -732,7 +729,6 @@ select {
 
   #filter {
     border-left: 1px solid var(--main-text-color);
-    border-right: 1px solid var(--main-text-color);
     box-sizing: border-box;
   }
 
@@ -754,10 +750,6 @@ select {
     padding: 4px 32px 32px 4px;
   }
 
-/*  #controls {
-    display: none;
-  }*/
-
   #controlsMobile {
     width: 100%;
     height: fit-content;
@@ -778,7 +770,7 @@ select {
 
   #results {
     width: 100%;
-    height: 30%;
+    height: 40%;
     box-sizing: border-box;
     border-top: none;
     border-bottom: 2px solid var(--main-text-color);
@@ -789,6 +781,10 @@ select {
     width: 100%;
     box-sizing: border-box;
     border-right: none;
+  }
+
+  .result_item:first-child {
+    border-top: none;
   }
 
   #popupAbout, #popupBingo {
